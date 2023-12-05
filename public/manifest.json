@@ -1,0 +1,14 @@
+{
+  "name": "ETHSea",
+  "short_name": "ICN",
+  "description": "-",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#141414",
+  "theme_color": "#141414",
+  "icons": [{
+    "src": "/favicon-32x32.png",
+    "sizes": "32x32",
+    "type": "image/png"
+  }]
+}

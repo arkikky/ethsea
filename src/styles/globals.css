@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+/* Tailwinds CSS */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Fonts */
+@layer base {
+  @font-face {
+    font-family: 'Beliau Regular';
+    src: local('Beliau Regular'), url('/assets/fonts/beliau.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+}
+
+body {
+  @apply bg-primary;
+  @apply font-spaceGrotesk text-white text-base font-normal;
+}
+
+body::-webkit-scrollbar {
+  @apply w-3.5;
+}
+
+body::-webkit-scrollbar-track {
+  @apply bg-primary;
+}
+
+body::-webkit-scrollbar-thumb {
+  @apply bg-[#A1A1A1];
+  @apply rounded-full;
+  @apply border-[5px] border-solid border-primary;
+  @apply px-0.5;
+}
+
+/* Hamburger */
+.hmbrgrStairs {
+  @apply rounded-md;
+  @apply h-8 sm:h-10 w-8 sm:w-10;
+}
+
+.hmbrgrStairs .hmbrgrStairsLine {
+  @apply bg-white;
+  @apply mb-1 last:mb-0;
+  @apply h-0.5 w-2.5;
+
+  @apply opacity-100 visible;
+  @apply transition duration-300 ease-in-out;
+}
+
+.hmbrgrStairs .hmbrgrStairsLine:nth-child(1) {
+  @apply ml-2;
+}
+
+.hmbrgrStairs .hmbrgrStairsLine:nth-child(2) {
+  @apply mx-auto;
+}
+
+.hmbrgrStairs .hmbrgrStairsLine:nth-child(3) {
+  @apply mr-2;
+}
+
+.hmbrgrStairs.deactive .hmbrgrStairsLine {
+  @apply first:rotate-[-45deg] first:translate-y-1.5 first:translate-x-0 first:ml-0;
+  @apply last:rotate-[43deg] last:-translate-y-1.5 last:translate-x-0 last:mr-0;
+  @apply w-[17px];
+}
+
+.hmbrgrStairs.deactive .hmbrgrStairsLine:nth-child(2) {
+  @apply opacity-0 invisible;
+}
+
+/* Text Gradient */
+.text-gradient-label {
+  background: linear-gradient(90deg, #F4B100 0%, #DEABB5 52.6%, #23A9A8 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Background Gradient */
+.gradient-border-primary {
+  @apply relative;
+
+  @apply transition duration-300 ease-in-out
+}
+
+.gradient-border-primary::before {
+  @apply content-[''];
+  @apply rounded-xl;
+  @apply absolute inset-y-0 inset-x-0;
+  background:linear-gradient(-90deg, #1A1A1A, #1A1A1A);
+  @apply py-0.5 px-0.5;
+  -webkit-mask: linear-gradient(#fff 0 0) content-box,
+  linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+
+.gradient-border-primary:hover::before ,
+.gradient-border-primary.active::before {
+  background:linear-gradient(-90deg, #5458C0, #DEABB5);
+}
+
+.bg-gradient-primary {
+  background: linear-gradient(270deg, #5458C0 0%, #DEABB5 100%, #DEABB5 100%);
+}
+
+.bg-gradient-secondary {
+  background: linear-gradient(90deg, #545AC2 0%, #DEABB5 52.08%, #FF2C2D 95.83%);
+}
+
+/* Navbar */
+.ethseaNavbar {
+  @apply bg-primary;
+}
+
+.ethseaNavbar.active {
+  @apply z-[9999];
+}
+
+/* Button (Toggle Active) */
+.ethseaNavbar.active .hmbrgrStairs .hmbrgrStairsLine {
+  @apply bg-white;
+}
+
+.ethseaNavbar .ethseaNavbarMain {
+  @apply h-[66px] sm:h-[101px];
+}
+
+.ethseaNavbar .ethseaNavbarMainMenu {
+  @apply bg-primary lg:bg-transparent;
+  @apply absolute lg:relative top-full bottom-0 lg:inset-y-0 inset-x-0;
+  @apply pt-4 pb-2 sm:py-2 lg:py-0 xl:py-2 px-4 sm:px-10 lg:px-0;
+  @apply min-h-screen lg:min-h-max;
+
+  @apply transition-all duration-[0.3s] ease-in-out;
+
+  backface-visibility: hidden;
+  @apply invisible opacity-0;
+}
+
+@screen lg {
+  .ethseaNavbar .ethseaNavbarMainMenu {
+    backface-visibility: visible;
+    @apply visible opacity-100;
+  }
+}
+
+.ethseaNavbar.active .ethseaNavbarMainMenu.active {
+  backface-visibility: visible;
+  @apply visible opacity-100;
+}
+
+.ethseaNavbar .ethseaNavbarMainMenu ul.ethseaNavbarMenu {
+  @apply flex flex-col lg:flex-row;
+}
+
+.ethseaNavbar .ethseaNavbarMainMenu ul.ethseaNavbarMenu > li {
+  @apply flex relative;
+}
+
+.ethseaNavbar .ethseaNavbarMainMenu ul.ethseaNavbarMenu > li a {
+  @apply flex flex-col items-start lg:items-center justify-start lg:justify-center;
+  @apply text-white font-spaceGrotesk text-base font-normal leading-inherit uppercase hover:underline py-6 px-4;
+  @apply outline-none focus-visible:outline-none;
+  @apply w-full lg:w-max;
+
+  @apply transition duration-300 ease-in-out;
+}
+
+.ethseaNavbar .ethseaNavbarMainMenu ul.ethseaNavbarMenu > li a.active {
+  @apply text-[#DEABB5] underline;
+}
+
+.ethseaNavbar .ethseaNavbarMainMenu ul.ethseaNavbarMenu.active > li a {
+  @apply text-white hover:text-[#DEABB5];
+}
+
+.ethseaNavbar .ethseaNavbarMainMenu ul.ethseaNavbarMenu.active > li a.active {
+  @apply text-[#DEABB5] underline;
+}
+
+/* Menu */
+.menu {
+  @apply flex flex-col;
+}
+
+.menu.menu-row {
+  @apply flex flex-row;
+}
+
+.menu .menu-items {
+  @apply mb-2 last:mb-0;
+}
+
+.menu.menu-row .menu-items {
+  @apply mb-0 mr-4 last:mr-0;
+}
+
+.menu .menu-items a {
+  @apply text-white font-spaceGrotesk text-xl font-light;
+  @apply outline-none focus-visible:outline-none;
+}
+
+.menu .menu-items:hover a {
+  @apply underline;
+}
