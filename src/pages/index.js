@@ -11,8 +11,8 @@ import Container from "@components/Container";
 // @layouts
 import Header from "@layouts/Header";
 import Board from "@layouts/Board";
-import MentorJudges from "@layouts/MentorJudges";
-import Partner from "@layouts/Partner";
+// import MentorJudges from "@layouts/MentorJudges";
+// import Partner from "@layouts/Partner";
 import FAQ from "@layouts/FAQ";
 
 const Home = () => {
@@ -44,7 +44,10 @@ const Home = () => {
           property="og:description"
           content={publicRuntimeConfig.siteDesc}
         />
-        <meta property="og:image" content="" />
+        <meta
+          property="og:image"
+          content={`${process.env.NEXT_PUBLIC_UPLOAD_STORAGE}/uploads/ethsea_Thumbnails_app_Share_Link_d44538de2d.jpg`}
+        />
 
         {/* Twitter */}
         <meta property="twitter:card" content="summary_large_image" />
@@ -57,7 +60,10 @@ const Home = () => {
           property="twitter:description"
           content={publicRuntimeConfig.siteDesc}
         />
-        <meta property="twitter:image" content="" />
+        <meta
+          property="twitter:image"
+          content={`${process.env.NEXT_PUBLIC_UPLOAD_STORAGE}/uploads/ethsea_Thumbnails_app_Share_Link_d44538de2d.jpg`}
+        />
       </Head>
 
       <main>
@@ -69,10 +75,10 @@ const Home = () => {
           <Board />
 
           {/* Mentor & Judges */}
-          <MentorJudges />
+          {/* <MentorJudges /> */}
 
           {/* Partner */}
-          <Partner />
+          {/* <Partner /> */}
 
           {/* @FAQ (Layouts) */}
           <FAQ />

@@ -39,7 +39,7 @@ const App = ({ Component, pageProps }) => {
           crossOrigin="true"
         />
         <meta name="author" content="ETHSea" />
-        <link rel="mask-icon" href="/favicon.svg" color="#141414" />
+        <link rel="mask-icon" href="/favicon.png" color="#141414" />
         <meta name="msapplication-TileColor" content="#141414" />
         <meta name="theme-color" content="#141414" />
         <meta name="msapplication-navbutton-color" content="#141414" />

@@ -12,7 +12,7 @@ const Board = () => {
         </div>
         <div className="supports-grid:grid grid-cols-4 sm:grid-cols-8 lg:grid-cols-12 gap-y-2 sm:gap-y-4 lg:gap-y-0 gap-x-8 px-1 mt-3 sm:mt-8 relative">
           <div className="col-span-full lg:col-span-6">
-            <div className="flex flex-col bg-[#1A1A1A] gradient-border-primary rounded-xl relative py-6 lg:py-8 px-6 h-full">
+            <div className="flex flex-col bg-[#1A1A1A] gradient-border-primary rounded-xl relative py-6 lg:py-8 px-6 h-full active">
               <h3 className="text-white font-spaceGrotesk text-xl sm:text-2xl font-bold first-letter:uppercase">
                 Hackathon
               </h3>
@@ -29,7 +29,7 @@ const Board = () => {
             </div>
           </div>
           <div className="col-span-full lg:col-span-6">
-            <div className="flex flex-col bg-[#1A1A1A] gradient-border-primary rounded-xl relative py-6 lg:py-8 px-6 h-full active">
+            <div className="flex flex-col bg-[#1A1A1A] gradient-border-primary rounded-xl relative py-6 lg:py-8 px-6 h-full">
               <h3 className="text-white font-spaceGrotesk text-xl sm:text-2xl font-bold first-letter:uppercase">
                 Hacker House
               </h3>

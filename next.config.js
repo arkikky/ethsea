@@ -3,6 +3,14 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "hub.coinvestasi.com",
+        port: "",
+        pathname: "/**",
+      },
+    ],
     formats: ["image/avif", "image/webp"],
     minimumCacheTTL: 60,
     dangerouslyAllowSVG: true,
