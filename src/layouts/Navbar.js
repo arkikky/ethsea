@@ -148,7 +148,7 @@ const Navbar = () => {
                         About
                       </Link>
                     </li>
-                    <li>
+                    {/* <li>
                       <Link
                         href="ethseaPartners"
                         activeClass="active"
@@ -161,7 +161,7 @@ const Navbar = () => {
                       >
                         Partners
                       </Link>
-                    </li>
+                    </li> */}
                     <li>
                       <Link
                         href="ethseaFAQ"
