@@ -85,29 +85,33 @@ body::-webkit-scrollbar-thumb {
 .gradient-border-primary {
   @apply relative;
 
-  @apply transition duration-300 ease-in-out
+  @apply transition-all duration-300 ease-in-out
 }
 
 .gradient-border-primary::before {
   @apply content-[''];
   @apply rounded-xl;
   @apply absolute inset-y-0 inset-x-0;
-  background:linear-gradient(-90deg, #1A1A1A, #1A1A1A);
+  background:linear-gradient(-90deg, #5458C0, #DEABB5);
   @apply py-0.5 px-0.5;
   -webkit-mask: linear-gradient(#fff 0 0) content-box,
   linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
   mask-composite: exclude;
+  @apply opacity-0;
 }
 
 .gradient-border-primary:hover::before ,
 .gradient-border-primary.active::before {
-  background:linear-gradient(-90deg, #5458C0, #DEABB5);
+  @apply opacity-100;
 }
 
 .bg-gradient-primary {
-  background: linear-gradient(270deg, #5458C0 0%, #DEABB5 100%, #DEABB5 100%);
+  background: linear-gradient("left", #5458C0 0%, #DEABB5 100%);
 }
+
+/* .bg-gradient-primary:hover {
+} */
 
 .bg-gradient-secondary {
   background: linear-gradient(90deg, #545AC2 0%, #DEABB5 52.08%, #FF2C2D 95.83%);
@@ -208,4 +212,13 @@ body::-webkit-scrollbar-thumb {
 
 .menu .menu-items:hover a {
   @apply underline;
+}
+
+/* Card */
+.ethseaBenefitCard::before {
+  @apply content-[''];
+  @apply rounded-[inherit];
+  @apply absolute inset-y-0 inset-x-0;
+  @apply border border-solid border-white;
+  @apply -z-px;
 }

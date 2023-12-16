@@ -8,7 +8,7 @@ import Container from "@components/Container";
 const Header = () => {
   return (
     <>
-      <header className="overflow-hidden relative mb-[100px] pt-[125px] sm:pt-[187px] h-auto sm:h-[940px] w-full">
+      <header className="overflow-hidden relative mb-15 pt-[125px] sm:pt-[187px] h-auto sm:h-[940px] w-full">
         {/* Header Backdrop (Cover Line) */}
         <div className="absolute inset-y-0 inset-x-0 -z-px">
           <Image
@@ -47,9 +47,9 @@ const Header = () => {
               will collaborate, innovate, and build the future of decentralized
               applications and blockchain solutions.
             </p>
-            <div className="inline-flex flex-col flex-wrap mt-8 w-full sm:w-max">
+            <div className="inline-flex flex-col sm:flex-row items-center flex-wrap mt-8 w-full">
               <Link
-                className="inline-flex flex-row items-center justify-center bg-gradient-primary border border-solid border-white rounded-xl text-white font-spaceGrotesk text-base sm:text-lg font-medium capitalize outline-none focus-visible:outline-none py-4 sm:py-6 px-6 w-full"
+                className="flex-1 inline-flex flex-row items-center justify-center bg-gradient-primary border border-solid border-white rounded-xl text-white font-spaceGrotesk text-base sm:text-lg font-medium capitalize outline-none focus-visible:outline-none py-4 sm:py-6 px-6 w-full max-w-full sm:max-w-fit"
                 href=""
               >
                 <svg
@@ -67,11 +67,19 @@ const Header = () => {
                     fill="white"
                   />
                 </svg>
-                Apply with DevFolio
+                Applications open soon
+              </Link>
+              <Link
+                className="flex-1 inline-flex flex-col items-center justify-center bg-transparent border border-solid border-transparent rounded-xl text-white font-spaceGrotesk text-base sm:text-lg font-medium capitalize hover:underline outline-none focus-visible:outline-none py-4 sm:py-6 px-6 w-full max-w-full sm:max-w-fit"
+                href="https://share.hsforms.com/15eAlxOlASAiSLpqC_YyMqAcjggg"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Interested in hosting a track?
               </Link>
             </div>
-            <div className="inline-flex flex-row flex-wrap mt-8 gap-x-[42px] w-full max-w-full">
-              <div className="flex-1 flex flex-col items-center justify-center w-full max-w-fit">
+            <div className="inline-flex flex-row flex-wrap mt-19 gap-x-[42px] w-full max-w-full">
+              {/* <div className="flex-1 flex flex-col items-center justify-center w-full max-w-fit">
                 <Image
                   className="object-bottom object-cover h-auto sm:h-[89px] w-[160px] sm:w-auto"
                   src="/assets/images/partner/header/ethsea-ETHGlobal.svg"
@@ -92,7 +100,8 @@ const Header = () => {
                   loading="lazy"
                   quality="87"
                 />
-              </div>
+              </div> */}
+              <span>Organized by ICN, the organizer of Coinfest Asia.</span>
             </div>
           </div>
         </Container>

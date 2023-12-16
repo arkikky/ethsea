@@ -32,13 +32,13 @@ const lyFAQ = () => {
             >
               <>
                 <button
-                  className="hs-accordion-toggle hs-accordion-active:text-secondary inline-flex items-center justify-between gap-x-3 group text-left focus-visible:outline-none relative py-4 sm:py-[34px] px-4 sm:px-8 w-full"
+                  className="hs-accordion-toggle hs-accordion-active:text-secondary inline-flex items-center justify-between gap-x-3 group text-left focus-visible:outline-none relative py-4 sm:py-[34px] w-full"
                   aria-controls={`accrdn${i}`}
                 >
                   <h3 className="text-white font-spaceGrotesk text-xl sm:text-2xl font-semibold pr-8 sm:pr-20">
                     {gtRslt.label}
                   </h3>
-                  <div className="flex flex-col items-center justify-center absolute inset-y-auto left-auto right-1 sm:right-8 h-10 w-10">
+                  <div className="flex flex-col items-center justify-center absolute inset-y-auto left-auto right-0 h-10 w-10">
                     <svg
                       className="fill-current text-secondary absolute inset-y-auto inset-x-auto hs-accordion-active:rotate-180 hs-accordion-active:opacity-0 h-6 sm:h-8 w-6 sm:w-8 transition duration-300"
                       viewBox="0 0 40 40"
@@ -69,7 +69,7 @@ const lyFAQ = () => {
                   className="hs-accordion-content hidden overflow-hidden w-full transition-[height] duration-300"
                   aria-labelledby={`accrdnHeading${i}`}
                 >
-                  <div className=" text-white font-spaceGrotesk text-lg sm:text-2xl font-light px-4 sm:px-8 pb-4 sm:pb-[34px]">
+                  <div className=" text-white font-spaceGrotesk text-lg sm:text-2xl font-light pb-4 sm:pb-[34px]">
                     {gtRslt.desc}
                   </div>
                 </div>

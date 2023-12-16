@@ -10,9 +10,12 @@ import Container from "@components/Container";
 
 // @layouts
 import Header from "@layouts/Header";
+import Benefit from "@layouts/Benefit";
 import Board from "@layouts/Board";
 // import MentorJudges from "@layouts/MentorJudges";
 // import Partner from "@layouts/Partner";
+import StrategicPartners from "@layouts/StrategicPartners";
+import Organized from "@layouts/Organized";
 import FAQ from "@layouts/FAQ";
 
 const Home = () => {
@@ -71,14 +74,25 @@ const Home = () => {
         <Header />
 
         <Container>
-          {/* Board */}
-          <Board />
+          <div id="ethseaAbout">
+            {/* @Benefit (Layouts) */}
+            <Benefit />
 
-          {/* Mentor & Judges */}
+            {/* @Board (Layouts) */}
+            <Board />
+          </div>
+
+          {/* @Mentor & Judges */}
           {/* <MentorJudges /> */}
 
-          {/* Partner */}
+          {/* @Partner */}
           {/* <Partner /> */}
+
+          {/* @Strategic Partners (Layouts) */}
+          <StrategicPartners />
+
+          {/* @Organized by (Layouts) */}
+          <Organized />
 
           {/* @FAQ (Layouts) */}
           <FAQ />

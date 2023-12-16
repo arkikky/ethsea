@@ -207,7 +207,7 @@ const Navbar = () => {
                       fill="white"
                     />
                   </svg>
-                  Apply with DevFolio
+                  Applications open soon
                 </Links>
               </div>
             </div>
@@ -221,6 +221,7 @@ const Navbar = () => {
             speed={30}
           >
             <div className="flex flex-row text-black-900 font-spaceGrotesk text-base font-normal capitalize">
+              <div className="mr-6">Ho Chi Minh City · Bangkok · Jakarta</div>
               <div className="mr-6">Ho Chi Minh City · Bangkok · Jakarta</div>
               <div className="mr-6">Ho Chi Minh City · Bangkok · Jakarta</div>
               <div className="mr-6">Ho Chi Minh City · Bangkok · Jakarta</div>
