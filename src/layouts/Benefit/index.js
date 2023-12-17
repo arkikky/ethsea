@@ -29,7 +29,7 @@ const Benefit = () => {
               <div className="block relative w-max">
                 <Image
                   className="h-6 lg:h-8 w-6 lg:w-8"
-                  src="/assets/images/ethSea-Benefit.png"
+                  src="/assets/images/backdrop/ethSea-Benefit.png"
                   alt="Eth Sea (Icons - Benefit)"
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
                   height={32}
@@ -53,7 +53,7 @@ const Benefit = () => {
               <div className="block relative w-max">
                 <Image
                   className="h-6 lg:h-8 w-6 lg:w-8"
-                  src="/assets/images/ethSea-Benefit.png"
+                  src="/assets/images/backdrop/ethSea-Benefit.png"
                   alt="Eth Sea (Icons - Benefit)"
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
                   height={32}
@@ -77,7 +77,7 @@ const Benefit = () => {
               <div className="block relative w-max">
                 <Image
                   className="h-6 lg:h-8 w-6 lg:w-8"
-                  src="/assets/images/ethSea-Benefit.png"
+                  src="/assets/images/backdrop/ethSea-Benefit.png"
                   alt="Eth Sea (Icons - Benefit)"
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
                   height={32}

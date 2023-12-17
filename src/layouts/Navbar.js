@@ -216,7 +216,7 @@ const Navbar = () => {
         <div className="bg-gradient-secondary flex flex-col items-center justify-center h-8 sm:h-15">
           <Marquee
             autoFill={true}
-            pauseOnHover={true}
+            pauseOnHover={false}
             direction="right"
             speed={30}
           >

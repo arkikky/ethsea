@@ -242,3 +242,19 @@ body::-webkit-scrollbar-thumb {
   @apply border border-solid border-white;
   @apply -z-px;
 }
+
+/* Timeline */
+.bgLine-Timeline {
+  background: linear-gradient(0deg, #5458C0 -7.54%, #DEABB5 101.05%);
+}
+
+.itemsLine-Timeline::before {
+  @apply content-[''];
+  @apply bg-[#DEABB5];
+  @apply absolute inset-y-0 -left-1 right-auto;
+  @apply rounded-full;
+  @apply my-auto;
+  @apply h-8 sm:h-10 w-8 sm:w-10;
+
+  @apply blur-md;
+}

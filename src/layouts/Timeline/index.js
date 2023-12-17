@@ -1,267 +1,131 @@
 import React from "react";
+import Image from "next/image";
 
 const Timeline = () => {
   return (
     <>
-      <div className="flex flex-col justify-center py-6 lg:py-12">
-        <div class="flex flex-row items-start gap-x-3">
-          <div>
-            <div class="relative last:after:hidden after:absolute after:top-7 after:bottom-0 after:start-3.5 after:w-px after:-translate-x-[0.5px] after:bg-gray-200 dark:after:bg-gray-700">
-              <div class="relative z-10 w-7 h-7 flex justify-center items-center">
-                <div class="w-2 h-2 rounded-full bg-gray-400 dark:bg-gray-600"></div>
-              </div>
-            </div>
+      <section className="flex flex-col relative mt-[118px] sm:mt-[160px]">
+        <div className="flex items-center justify-center absolute top-0 bottom-auto left-auto -right-[289px]">
+          <Image
+            className="w-[494px]"
+            src="/assets/images/backdrop/ethSea-Items2.png"
+            alt="Eth Sea (Items 2 - Backdrop)"
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 100vw"
+            height={602}
+            width={494}
+            quality="87"
+          />
+        </div>
 
-            <div class="grow pt-0.5 pb-8">
-              <h3 class="flex gap-x-1.5 font-semibold text-gray-800 dark:text-white">
-                <svg
-                  class="flex-shrink-0 w-4 h-4 mt-1"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z" />
-                  <polyline points="14 2 14 8 20 8" />
-                  <line x1="16" x2="8" y1="13" y2="13" />
-                  <line x1="16" x2="8" y1="17" y2="17" />
-                  <line x1="10" x2="8" y1="9" y2="9" />
-                </svg>
-                Created "Preline in React" task
-              </h3>
-              <p class="mt-1 text-sm text-gray-600 dark:text-gray-400">
-                Find more detailed insctructions here.
-              </p>
-              <button
-                type="button"
-                class="mt-1 -ms-1 p-1 inline-flex items-center gap-x-2 text-xs rounded-lg border border-transparent text-gray-500 hover:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
-              >
-                <img
-                  class="flex-shrink-0 w-4 h-4 rounded-full"
-                  src="https://images.unsplash.com/photo-1659482633369-9fe69af50bfb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8auto=format&fit=facearea&facepad=3&w=320&h=320&q=80"
-                  alt="Image Description"
+        <div className="flex flex-col px-0 sm:px-8">
+          <h2 className="text-white font-beliau text-[34px] sm:text-[56px] lg:text-[64px] leading-[34px] sm:leading-[66px] lg:leading-[64px] font-normal capitalize text-center w-full">
+            Timeline
+          </h2>
+        </div>
+        <div className="flex flex-col justify-center relative py-6 lg:py-[147px] pl-3 sm:pl-8 lg:pl-0 mt-8 sm:mt-15 lg:mt-19 mx-auto w-full max-w-full xl:max-w-[947px]">
+          <div className="bgLine-Timeline rounded-full absolute block left-3 sm:left-8 lg:left-1/2 h-full w-1 transform translate-x-0 lg:-translate-x-1/2 active"></div>
+
+          <div className="flex flex-row items-center justify-start lg:justify-end mt-0">
+            <div className="flex relative pl-6 sm:pl-14 lg:pl-0 w-[68%] lg:w-1/2">
+              <div className="itemsLine-Timeline flex items-center justify-center absolute inset-y-0 -left-1.5 sm:-left-2.5 lg:-left-4 right-auto w-max">
+                <Image
+                  className="h-4 sm:h-6 lg:h-8 w-4 sm:w-6 lg:w-8 rotate-45"
+                  src="/assets/images/backdrop/ethSeaItems-Timeline.png"
+                  alt="Eth Sea (Items - Timeline)"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 100vw"
+                  height={42}
+                  width={42}
+                  quality="87"
                 />
-                James Collins
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="flex flex-row items-end gap-x-3">
-          <div>
-            <div class="relative last:after:hidden after:absolute after:top-7 after:bottom-0 after:start-3.5 after:w-px after:-translate-x-[0.5px] after:bg-gray-200 dark:after:bg-gray-700">
-              <div class="relative z-10 w-7 h-7 flex justify-center items-center">
-                <div class="w-2 h-2 rounded-full bg-gray-400 dark:bg-gray-600"></div>
+              </div>
+
+              <div className="grow pl-0 lg:pl-[121px]">
+                <span className="text-white font-spaceGrotesk text-sm sm:text-base lg:text-2xl font-light">
+                  1 April — 20 May
+                </span>
+                <h3 className="text-white font-spaceGrotesk text-base sm:text-2xl lg:text-[32px] lg:leading-[42px] font-bold capitalize mt-1">
+                  Open Registration
+                </h3>
               </div>
             </div>
-
-            <div class="grow pt-0.5 pb-8">
-              <h3 class="flex gap-x-1.5 font-semibold text-gray-800 dark:text-white">
-                <svg
-                  class="flex-shrink-0 w-4 h-4 mt-1"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z" />
-                  <polyline points="14 2 14 8 20 8" />
-                  <line x1="16" x2="8" y1="13" y2="13" />
-                  <line x1="16" x2="8" y1="17" y2="17" />
-                  <line x1="10" x2="8" y1="9" y2="9" />
-                </svg>
-                Created "Preline in React" task
-              </h3>
-              <p class="mt-1 text-sm text-gray-600 dark:text-gray-400">
-                Find more detailed insctructions here.
-              </p>
-              <button
-                type="button"
-                class="mt-1 -ms-1 p-1 inline-flex items-center gap-x-2 text-xs rounded-lg border border-transparent text-gray-500 hover:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
-              >
-                <img
-                  class="flex-shrink-0 w-4 h-4 rounded-full"
-                  src="https://images.unsplash.com/photo-1659482633369-9fe69af50bfb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8auto=format&fit=facearea&facepad=3&w=320&h=320&q=80"
-                  alt="Image Description"
+          </div>
+          <div className="flex flex-row items-center justify-start mt-[84px]">
+            <div className="flex relative pl-6 sm:pl-14 lg:pl-0 w-[68%] lg:w-1/2">
+              <div className="itemsLine-Timeline flex items-center justify-center absolute inset-y-0 -left-1.5 sm:-left-2.5 lg:left-auto right-auto lg:-right-4 w-max">
+                <Image
+                  className="h-4 sm:h-6 lg:h-8 w-4 sm:w-6 lg:w-8 rotate-45"
+                  src="/assets/images/backdrop/ethSeaItems-Timeline.png"
+                  alt="Eth Sea (Items - Timeline)"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 100vw"
+                  height={42}
+                  width={42}
+                  quality="87"
                 />
-                James Collins
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <div class="flex gap-x-3">
-          <div class="w-16 text-end">
-            <span class="text-xs text-gray-500 dark:text-gray-400">
-              12:05PM
-            </span>
-          </div>
-
-          <div class="relative last:after:hidden after:absolute after:top-7 after:bottom-0 after:start-3.5 after:w-px after:-translate-x-[0.5px] after:bg-gray-200 dark:after:bg-gray-700">
-            <div class="relative z-10 w-7 h-7 flex justify-center items-center">
-              <div class="w-2 h-2 rounded-full bg-gray-400 dark:bg-gray-600"></div>
-            </div>
-          </div>
-
-          <div class="grow pt-0.5 pb-8">
-            <h3 class="flex gap-x-1.5 font-semibold text-gray-800 dark:text-white">
-              Release v5.2.0 quick bug fix 🐞
-            </h3>
-            <button
-              type="button"
-              class="mt-1 -ms-1 p-1 inline-flex items-center gap-x-2 text-xs rounded-lg border border-transparent text-gray-500 hover:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
-            >
-              <span class="flex flex-shrink-0 justify-center items-center w-4 h-4 bg-white border border-gray-200 text-[10px] font-semibold uppercase text-gray-600 rounded-full dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400">
-                A
-              </span>
-              Alex Gregarov
-            </button>
-          </div>
-        </div>
-
-        <div class="flex gap-x-3">
-          <div class="w-16 text-end">
-            <span class="text-xs text-gray-500 dark:text-gray-400">
-              12:05PM
-            </span>
-          </div>
-
-          <div class="relative last:after:hidden after:absolute after:top-7 after:bottom-0 after:start-3.5 after:w-px after:-translate-x-[0.5px] after:bg-gray-200 dark:after:bg-gray-700">
-            <div class="relative z-10 w-7 h-7 flex justify-center items-center">
-              <div class="w-2 h-2 rounded-full bg-gray-400 dark:bg-gray-600"></div>
-            </div>
-          </div>
-
-          <div class="grow pt-0.5 pb-8">
-            <h3 class="flex gap-x-1.5 font-semibold text-gray-800 dark:text-white">
-              Marked "Install Charts" completed
-            </h3>
-            <p class="mt-1 text-sm text-gray-600 dark:text-gray-400">
-              Finally! You can check it out here.
-            </p>
-            <button
-              type="button"
-              class="mt-1 -ms-1 p-1 inline-flex items-center gap-x-2 text-xs rounded-lg border border-transparent text-gray-500 hover:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
-            >
-              <img
-                class="flex-shrink-0 w-4 h-4 rounded-full"
-                src="https://images.unsplash.com/photo-1659482633369-9fe69af50bfb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=3&w=320&h=320&q=80"
-                alt="Image Description"
-              />
-              James Collins
-            </button>
-          </div>
-        </div>
-
-        <div class="flex gap-x-3">
-          <div class="w-16 text-end">
-            <span class="text-xs text-gray-500 dark:text-gray-400">
-              12:05PM
-            </span>
-          </div>
-
-          <div class="relative last:after:hidden after:absolute after:top-7 after:bottom-0 after:start-3.5 after:w-px after:-translate-x-[0.5px] after:bg-gray-200 dark:after:bg-gray-700">
-            <div class="relative z-10 w-7 h-7 flex justify-center items-center">
-              <div class="w-2 h-2 rounded-full bg-gray-400 dark:bg-gray-600"></div>
-            </div>
-          </div>
-
-          <div class="grow pt-0.5 pb-8">
-            <h3 class="flex gap-x-1.5 font-semibold text-gray-800 dark:text-white">
-              Take a break ⛳️
-            </h3>
-            <p class="mt-1 text-sm text-gray-600 dark:text-gray-400">
-              Just chill for now... 😉
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="flex flex-col justify-center py-6 lg:py-12">
-        <div class="w-full mx-auto lg:max-w-4xl">
-          <div class="relative">
-            <div class="absolute hidden w-px h-full transform -translate-x-1/2 bg-indigo-300 lg:block left-1/2"></div>
-            <div class="space-y-12 lg:space-y-8">
-              <div>
-                <div class="flex flex-col items-center">
-                  <div class="flex items-center justify-start w-full mx-auto">
-                    <div class="w-full lg:w-1/2 lg:pr-8">
-                      <div class="p-4 bg-white rounded shadow-lg shadow-cyan-300">
-                        <p>
-                          Lorem, ipsum dolor sit amet consectetur dolor elit.{" "}
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="absolute flex items-center justify-center w-8 h-8 transform -translate-x-1/2 -translate-y-4 bg-indigo-400 border-2 border-red-200 rounded-full left-1/2 sm:translate-y-0">
-                    <span class="text-white">1</span>
-                  </div>
-                </div>
               </div>
 
-              <div>
-                <div class="flex flex-col items-center">
-                  <div class="flex items-center justify-end w-full mx-auto">
-                    <div class="w-full lg:w-1/2 lg:pl-8">
-                      <div class="p-4 bg-white rounded shadow-lg shadow-red-300">
-                        <p>
-                          Lorem, ipsum dolor sit amet consectetur dolor elit.{" "}
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="absolute flex items-center justify-center w-8 h-8 transform -translate-x-1/2 -translate-y-4 bg-indigo-400 border-2 border-red-200 rounded-full left-1/2 sm:translate-y-0">
-                    <span class="text-white">2</span>
-                  </div>
-                </div>
+              <div className="grow pr-[121px]">
+                <span className="text-white font-spaceGrotesk text-sm sm:text-base lg:text-2xl font-light">
+                  2 — 28 May
+                </span>
+                <h3 className="text-white font-spaceGrotesk text-base sm:text-2xl lg:text-[32px] lg:leading-[42px] font-bold capitalize mt-1">
+                  Open Submissions
+                </h3>
+              </div>
+            </div>
+          </div>
+          <div className="flex flex-row items-center justify-start lg:justify-end mt-[84px]">
+            <div className="flex relative pl-6 sm:pl-14 lg:pl-0 w-[68%] lg:w-1/2">
+              <div className="itemsLine-Timeline flex items-center justify-center absolute inset-y-0 -left-1.5 sm:-left-2.5 lg:-left-4 right-auto w-max">
+                <Image
+                  className="h-4 sm:h-6 lg:h-8 w-4 sm:w-6 lg:w-8 rotate-45"
+                  src="/assets/images/backdrop/ethSeaItems-Timeline.png"
+                  alt="Eth Sea (Items - Timeline)"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 100vw"
+                  height={42}
+                  width={42}
+                  quality="87"
+                />
               </div>
 
-              <div>
-                <div class="flex flex-col items-center">
-                  <div class="flex items-center justify-start w-full mx-auto">
-                    <div class="w-full lg:w-1/2 lg:pr-8">
-                      <div class="p-4 bg-white rounded shadow-lg shadow-yellow-300">
-                        <p>
-                          Lorem, ipsum dolor sit amet consectetur dolor elit.{" "}
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="absolute flex items-center justify-center w-8 h-8 transform -translate-x-1/2 -translate-y-4 bg-indigo-400 border-2 border-red-200 rounded-full left-1/2 sm:translate-y-0">
-                    <span class="text-white">3</span>
-                  </div>
-                </div>
+              <div className="grow pl-0 lg:pl-[121px]">
+                <span className="text-white font-spaceGrotesk text-sm sm:text-base lg:text-2xl font-light">
+                  16 — 25 May
+                </span>
+                <h3 className="text-white font-spaceGrotesk text-base sm:text-2xl lg:text-[32px] lg:leading-[42px] font-bold capitalize mt-1">
+                  ETH SEA Roadshow
+                </h3>
+                <p className="text-white font-spaceGrotesk text-sm sm:text-xl font-light mt-1">
+                  Vietnam, Bangkok, Jakarta
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="flex flex-row items-center justify-start mt-[84px]">
+            <div className="flex relative pl-6 sm:pl-14 lg:pl-0 w-[68%] lg:w-1/2">
+              <div className="itemsLine-Timeline flex items-center justify-center absolute inset-y-0 -left-1.5 sm:-left-2.5 lg:left-auto right-auto lg:-right-4 w-max">
+                <Image
+                  className="h-4 sm:h-6 lg:h-8 w-4 sm:w-6 lg:w-8 rotate-45"
+                  src="/assets/images/backdrop/ethSeaItems-Timeline.png"
+                  alt="Eth Sea (Items - Timeline)"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 100vw"
+                  height={42}
+                  width={42}
+                  quality="87"
+                />
               </div>
 
-              <div>
-                <div class="flex flex-col items-center">
-                  <div class="flex items-center justify-end w-full mx-auto">
-                    <div class="w-full lg:w-1/2 lg:pl-8">
-                      <div class="p-4 bg-white rounded shadow-lg shadow-lime-300">
-                        <p>
-                          Lorem, ipsum dolor sit amet consectetur dolor elit.{" "}
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="absolute flex items-center justify-center w-8 h-8 transform -translate-x-1/2 -translate-y-4 bg-indigo-400 border-2 border-red-200 rounded-full left-1/2 sm:translate-y-0">
-                    <span class="text-white">4</span>
-                  </div>
-                </div>
+              <div className="grow pr-[121px]">
+                <span className="text-white font-spaceGrotesk text-sm sm:text-base lg:text-2xl font-light">
+                  9 June
+                </span>
+                <h3 className="text-white font-spaceGrotesk text-base sm:text-2xl lg:text-[32px] lg:leading-[42px] font-bold capitalize mt-1">
+                  Winner Announcement
+                </h3>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 };
