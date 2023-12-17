@@ -21,7 +21,7 @@ const Board = () => {
                 unlocking new opportunities.
               </p>
               <Link
-                className="text-[#DEABB5] font-spaceGrotesk text-base sm:text-2xl font-semibold first-letter:uppercase group-hover:underline outline-none focus-visible:outline-none mt-4"
+                className="text-[#DEABB5] font-spaceGrotesk text-base sm:text-2xl font-semibold first-letter:uppercase group-active:underline group-hover:underline outline-none focus-visible:outline-none mt-4"
                 href=""
               >
                 Apply Now
