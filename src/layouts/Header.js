@@ -13,7 +13,7 @@ const Header = () => {
         <div className="absolute inset-y-0 inset-x-0 -z-px">
           <Image
             className="object-bottom object-cover h-full w-full"
-            src="/assets/images/backdrop/ethseaLines.svg"
+            src="/assets/images/backdrop/ethSeaLines.svg"
             alt="ETH Sea (Header Backdrop (Cover Line)"
             height={940}
             width={1440}
@@ -26,10 +26,11 @@ const Header = () => {
         <div className="absolute inset-y-0 left-auto -right-[89px] sm:-right-[219px] xl:right-0 h-[487px] sm:h-full -z-px">
           <Image
             className="object-bottom object-cover h-full w-full"
-            src="/assets/images/backdrop/ethseaPolygon.png"
-            alt="ETH Sea (Header Items Backdrop (Polygon)"
-            height={940}
-            width={1440}
+            src="/assets/images/ethSeaPolygon-Header.png"
+            alt="ETH Sea (Header (Polygon)"
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
+            height={673}
+            width={888}
             loading="lazy"
             quality="87"
           />

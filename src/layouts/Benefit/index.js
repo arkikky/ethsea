@@ -11,8 +11,9 @@ const Benefit = () => {
               className="h-[50px] sm:h-[64px] w-auto"
               src="/assets/images/ethSea-White.svg"
               alt="Eth Sea (Brand Primary - Benefit)"
-              height={49}
-              width={107}
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
+              height={32}
+              width={32}
               quality="87"
             />
           </div>
@@ -30,6 +31,7 @@ const Benefit = () => {
                   className="h-6 lg:h-8 w-6 lg:w-8"
                   src="/assets/images/ethSea-Benefit.png"
                   alt="Eth Sea (Icons - Benefit)"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
                   height={32}
                   width={32}
                   quality="87"
@@ -53,6 +55,7 @@ const Benefit = () => {
                   className="h-6 lg:h-8 w-6 lg:w-8"
                   src="/assets/images/ethSea-Benefit.png"
                   alt="Eth Sea (Icons - Benefit)"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
                   height={32}
                   width={32}
                   quality="87"
@@ -76,6 +79,7 @@ const Benefit = () => {
                   className="h-6 lg:h-8 w-6 lg:w-8"
                   src="/assets/images/ethSea-Benefit.png"
                   alt="Eth Sea (Icons - Benefit)"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
                   height={32}
                   width={32}
                   quality="87"
