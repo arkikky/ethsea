@@ -2,13 +2,13 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 
-const StrategicPartners = () => {
+const AsPartOf = () => {
   return (
     <>
-      <section className="flex flex-col mt-[155px] lg:mt-[215px]">
+      <section className="flex flex-col mt-19">
         <div className="flex flex-col px-0 sm:px-8">
           <h2 className="text-white font-beliau text-[34px] sm:text-[56px] lg:text-[64px] leading-[34px] sm:leading-[66px] lg:leading-[64px] font-normal capitalize text-center w-full">
-            Strategic Partners
+            As part of
           </h2>
         </div>
         <div className="supports-grid:grid grid-cols-4 sm:grid-cols-8 lg:grid-cols-12 gap-y-2 sm:gap-y-4 gap-x-2 sm:gap-x-4 mt-8 relative">
@@ -19,8 +19,8 @@ const StrategicPartners = () => {
             >
               <Image
                 className="h-[116px] sm:h-full w-full"
-                src="/assets/images/partner/strategies/ethSea-Coinvestasi.svg"
-                alt="Eth Sea (Coinvestasi - Strategic Partners Partner)"
+                src="/assets/images/partner/aspart-of/ethSea-CoinfestAsia.svg"
+                alt="Eth Sea (Coinfest Asia -  As part of Partner)"
                 sizes="(max-width: 768px) 150vw, (max-width: 1200px) 50vw, 50vw"
                 height={324}
                 width={592}
@@ -35,8 +35,8 @@ const StrategicPartners = () => {
             >
               <Image
                 className="h-[116px] sm:h-full w-full"
-                src="/assets/images/partner/strategies/ethSea-Coindesk.svg"
-                alt="Eth Sea (CoinDesk Indonesia - Strategic Partners Partner)"
+                src="/assets/images/partner/aspart-of/ethSea-W3W.svg"
+                alt="Eth Sea (W3W -  As part of Partner)"
                 sizes="(max-width: 768px) 150vw, (max-width: 1200px) 50vw, 50vw"
                 height={324}
                 width={592}
@@ -49,4 +49,4 @@ const StrategicPartners = () => {
     </>
   );
 };
-export default StrategicPartners;
+export default AsPartOf;

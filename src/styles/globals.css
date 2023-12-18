@@ -248,6 +248,20 @@ body::-webkit-scrollbar-thumb {
   background: linear-gradient(0deg, #5458C0 -7.54%, #DEABB5 101.05%);
 }
 
+.bgLine-Timeline::before {
+  @apply content-[''];
+  background: linear-gradient(180deg, #141414 0%, rgba(20, 20, 20, 0.00) 100%);
+  @apply absolute top-0 bottom-auto inset-x-0;
+  @apply h-[177px];
+}
+
+.bgLine-Timeline::after {
+  @apply content-[''];
+  background: linear-gradient(0deg, #141414 0%, rgba(20, 20, 20, 0.00) 100%);
+  @apply absolute top-auto bottom-0 inset-x-0;
+  @apply h-[177px];
+}
+
 .itemsLine-Timeline::before {
   @apply content-[''];
   @apply bg-[#DEABB5];

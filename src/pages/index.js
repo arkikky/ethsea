@@ -17,6 +17,7 @@ import Board from "@layouts/Board";
 import Timeline from "@layouts/Timeline";
 import StrategicPartners from "@layouts/StrategicPartners";
 import Organized from "@layouts/Organized";
+import AsPartOf from "@layouts/AsPartOf";
 import FAQ from "@layouts/FAQ";
 
 const Home = () => {
@@ -70,12 +71,12 @@ const Home = () => {
         />
       </Head>
 
-      <main>
+      <main className="overflow-hidden">
         {/* Header */}
         <Header />
 
         <Container>
-          <div id="ethseaAbout">
+          <div id="ethSeaAbout">
             {/* @Benefit (Layouts) */}
             <Benefit />
 
@@ -83,20 +84,19 @@ const Home = () => {
             <Board />
           </div>
 
-          {/* @Mentor & Judges */}
-          {/* <MentorJudges /> */}
-
-          {/* @Partner */}
-          {/* <Partner /> */}
-
           {/* @Timeline */}
           <Timeline />
 
-          {/* @Strategic Partners (Layouts) */}
-          <StrategicPartners />
+          <div id="ethSeaPartners">
+            {/* @Strategic Partners (Layouts) */}
+            <StrategicPartners />
 
-          {/* @Organized by (Layouts) */}
-          <Organized />
+            {/* @Organized by (Layouts) */}
+            <Organized />
+
+            {/* @Organized by (Layouts) */}
+            <AsPartOf />
+          </div>
 
           {/* @FAQ (Layouts) */}
           <FAQ />

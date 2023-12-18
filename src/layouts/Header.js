@@ -15,6 +15,7 @@ const Header = () => {
             className="object-bottom object-cover h-full w-full"
             src="/assets/images/backdrop/ethSeaLines.svg"
             alt="ETH Sea (Header Backdrop (Cover Line)"
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
             height={940}
             width={1440}
             loading="lazy"

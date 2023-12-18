@@ -136,9 +136,9 @@ const Navbar = () => {
                   <>
                     <li>
                       <Link
-                        href="ethseaAbout"
+                        href="ethSeaAbout"
                         activeClass="active"
-                        to="ethseaAbout"
+                        to="ethSeaAbout"
                         spy={true}
                         hashSpy={false}
                         smooth={"easeInOutCubic"}
@@ -148,11 +148,11 @@ const Navbar = () => {
                         About
                       </Link>
                     </li>
-                    {/* <li>
+                    <li>
                       <Link
-                        href="ethseaPartners"
+                        href="ethSeaPartners"
                         activeClass="active"
-                        to="ethseaPartners"
+                        to="ethSeaPartners"
                         spy={true}
                         hashSpy={false}
                         smooth={"easeInOutCubic"}
@@ -161,12 +161,26 @@ const Navbar = () => {
                       >
                         Partners
                       </Link>
-                    </li> */}
+                    </li>
                     <li>
                       <Link
-                        href="ethseaFAQ"
+                        href="ethSeaTimeline"
                         activeClass="active"
-                        to="ethseaFAQ"
+                        to="ethSeaTimeline"
+                        spy={true}
+                        hashSpy={false}
+                        smooth={"easeInOutCubic"}
+                        offset={-223}
+                        duration={500}
+                      >
+                        Timeline
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href="ethSeaFAQ"
+                        activeClass="active"
+                        to="ethSeaFAQ"
                         spy={true}
                         hashSpy={false}
                         smooth={"easeInOutCubic"}

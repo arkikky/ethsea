@@ -10,8 +10,8 @@ const Board = () => {
             What’s on ETH SEA
           </h2>
         </div>
-        <div className="supports-grid:grid grid-cols-4 sm:grid-cols-8 lg:grid-cols-12 gap-y-2 sm:gap-y-4 lg:gap-y-0 gap-x-0 lg:gap-x-6 xl:gap-x-8 px-0 sm:px-1 mt-3 sm:mt-8 relative">
-          <div className="col-span-full lg:col-span-6">
+        <div className="supports-grid:grid grid-cols-4 sm:grid-cols-8 lg:grid-cols-12 gap-y-2 sm:gap-y-4 lg:gap-y-0 gap-x-4 lg:gap-x-6 xl:gap-x-8 px-0 sm:px-1 mt-3 sm:mt-8 relative">
+          <div className="col-span-full sm:col-span-4 lg:col-span-6">
             <div className="group flex flex-col bg-[#1A1A1A] border-gradient-primary rounded-xl sm:rounded-[14px] relative py-6 lg:py-8 px-6 h-full active">
               <h3 className="text-white font-spaceGrotesk text-xl sm:text-2xl font-bold first-letter:uppercase">
                 Hackathon
@@ -28,7 +28,7 @@ const Board = () => {
               </Link>
             </div>
           </div>
-          <div className="col-span-full lg:col-span-6">
+          <div className="col-span-full sm:col-span-4 lg:col-span-6">
             <div className="group flex flex-col bg-[#1A1A1A] border-gradient-primary rounded-xl sm:rounded-[14px] relative py-6 lg:py-8 px-6 h-full">
               <h3 className="text-white font-spaceGrotesk text-xl sm:text-2xl font-bold first-letter:uppercase">
                 Hacker House

@@ -17,7 +17,7 @@ const Organized = () => {
             href="https://indonesiacrypto.network/"
           >
             <Image
-              className="h-[116px] sm:h-full w-full sm:w-[592px]"
+              className="h-[116px] sm:h-full w-full lg:w-[414px] xl:w-[592px]"
               src="/assets/images/partner/organized/ethSea-ICN.svg"
               alt="Eth Sea (Indonesia Crypto Network - Organized Partner)"
               height={324}
