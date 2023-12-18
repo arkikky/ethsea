@@ -37,7 +37,7 @@ const Footer = () => {
                   decentralized applications and blockchain solutions.
                 </p>
               </div>
-              <div className="flex flex-col mt-10 lg:mt-0 lg:mr-0 xl:mr-14">
+              <div className="flex flex-col mt-10 lg:mt-0 lg:mr-0 xl:mr-24">
                 <h2 className="text-white font-spaceGrotesk text-xl font-semibold uppercase">
                   ETHSea
                 </h2>

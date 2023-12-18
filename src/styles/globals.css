@@ -20,6 +20,7 @@
 body {
   @apply bg-primary;
   @apply font-spaceGrotesk text-white text-base font-normal;
+  @apply scroll-smooth;
 }
 
 body::-webkit-scrollbar {

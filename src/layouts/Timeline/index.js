@@ -4,55 +4,86 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import Image from "next/image";
 
 const Timeline = () => {
+  const rfMain = useRef(null);
   const rfItems1 = useRef(null);
+  const rfItems2 = useRef(null);
+  const rfItems3 = useRef(null);
 
   useEffect(() => {
-    gsap.set(rfItems1.current, { yPercent: -5 });
+    gsap.set(rfItems1.current, { y: "0%" });
 
-    const initGspScrll = gsap.context(() => {
+    const intScrllItems = gsap.context(() => {
       gsap.registerPlugin(ScrollTrigger);
 
-      let intTl = gsap.timeline({
+      gsap.from(rfItems1.current, {
+        y: "-10%",
+        ease: "none",
         scrollTrigger: {
-          trigger: rfItems1.current,
+          trigger: rfMain.current,
+          start: "top center",
+          end: "center center",
           scrub: true,
-          start: "top bottom",
-          end: "top 20%",
-          invalidateOnRefresh: true,
         },
       });
-
-      intTl
-        .from(rfItems1.current, {
-          translateY: "0",
-          ease: "none",
-        })
-        .to(rfItems1.current, {
-          translateY: "20px",
-          ease: "none",
-        });
     });
-    return () => initGspScrll.revert();
 
-    // gsap.to(rfItems1.current, {
-    //   yPercent: 5,
-    //   ease: "none",
-    //   scrollTrigger: {
-    //     trigger: rfItems1.current,
-    //     end: "bottom center",
-    //     scrub: 1,
-    //   },
-    // });
+    return () => {
+      intScrllItems.revert();
+    };
+  }, []);
 
-    // return () => {
-    //   undefined;
-    // };
+  useEffect(() => {
+    gsap.set(rfItems2.current, { y: "0%" });
+
+    const intScrllItems = gsap.context(() => {
+      gsap.registerPlugin(ScrollTrigger);
+
+      gsap.from(rfItems2.current, {
+        y: "14%",
+        ease: "none",
+        scrollTrigger: {
+          trigger: rfMain.current,
+          start: "top center",
+          end: "center center",
+          scrub: true,
+        },
+      });
+    });
+
+    return () => {
+      intScrllItems.revert();
+    };
+  }, []);
+
+  useEffect(() => {
+    gsap.set(rfItems3.current, { y: "0%" });
+
+    const intScrllItems = gsap.context(() => {
+      gsap.registerPlugin(ScrollTrigger);
+
+      gsap.from(rfItems3.current, {
+        // x: "-10%",
+        y: "-20%",
+        ease: "none",
+        scrollTrigger: {
+          trigger: rfItems3.current,
+          start: "top 85%",
+          end: "center center",
+          scrub: true,
+        },
+      });
+    });
+
+    return () => {
+      intScrllItems.revert();
+    };
   }, []);
 
   return (
     <>
       <section
         id="ethSeaTimeline"
+        ref={rfMain}
         className="flex flex-col relative mt-[118px] lg:mt-[160px] xl:mt-[237px]"
       >
         <div
@@ -69,7 +100,10 @@ const Timeline = () => {
             quality="87"
           />
         </div>
-        <div className="hidden lg:flex items-center justify-center absolute -top-[133px] xl:-top-11 bottom-auto left-auto -right-[229px] xl:-right-[153px] 2xl:-right-[289px] pointer-events-none -z-px">
+        <div
+          ref={rfItems2}
+          className="hidden lg:flex items-center justify-center absolute -top-[133px] xl:-top-11 bottom-auto left-auto -right-[229px] xl:-right-[153px] 2xl:-right-[289px] pointer-events-none -z-px"
+        >
           <Image
             className="w-[394px] 2xl:w-[494px]"
             src="/assets/images/backdrop/ethSea-Items2.png"
@@ -80,7 +114,10 @@ const Timeline = () => {
             quality="87"
           />
         </div>
-        <div className="hidden lg:flex items-center justify-center absolute top-auto -bottom-[281px] lg:-bottom-[237px] 2xl:-bottom-[386px] -left-[271px] xl:-left-[241px] 2xl:-left-[393px] right-auto pointer-events-none -z-px">
+        <div
+          ref={rfItems3}
+          className="hidden lg:flex items-center justify-center absolute top-auto -bottom-[281px] lg:-bottom-[237px] 2xl:-bottom-[386px] -left-[271px] xl:-left-[241px] 2xl:-left-[393px] right-auto pointer-events-none -z-px"
+        >
           <Image
             className=" -rotate-[44deg] w-[437px] 2xl:w-[594px]"
             src="/assets/images/backdrop/ethSea-Items3.png"
