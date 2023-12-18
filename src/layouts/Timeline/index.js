@@ -8,6 +8,7 @@ const Timeline = () => {
   const rfItems1 = useRef(null);
   const rfItems2 = useRef(null);
   const rfItems3 = useRef(null);
+  const rfItems4 = useRef(null);
 
   useEffect(() => {
     gsap.set(rfItems1.current, { y: "0%" });
@@ -56,18 +57,41 @@ const Timeline = () => {
   }, []);
 
   useEffect(() => {
-    gsap.set(rfItems3.current, { y: "0%" });
+    gsap.set(rfItems3.current, { x: "0%", y: "-5%" });
 
     const intScrllItems = gsap.context(() => {
       gsap.registerPlugin(ScrollTrigger);
 
       gsap.from(rfItems3.current, {
-        // x: "-10%",
-        y: "-20%",
+        x: "-10%",
+        y: "0%",
         ease: "none",
         scrollTrigger: {
           trigger: rfItems3.current,
-          start: "top 85%",
+          start: "top bottom",
+          end: "center center",
+          scrub: true,
+        },
+      });
+    });
+
+    return () => {
+      intScrllItems.revert();
+    };
+  }, []);
+
+  useEffect(() => {
+    gsap.set(rfItems4.current, { y: "0%" });
+
+    const intScrllItems = gsap.context(() => {
+      gsap.registerPlugin(ScrollTrigger);
+
+      gsap.from(rfItems4.current, {
+        y: "10%",
+        ease: "none",
+        scrollTrigger: {
+          trigger: rfItems4.current,
+          start: "top bottom",
           end: "center center",
           scrub: true,
         },
@@ -84,14 +108,14 @@ const Timeline = () => {
       <section
         id="ethSeaTimeline"
         ref={rfMain}
-        className="flex flex-col relative mt-[118px] lg:mt-[160px] xl:mt-[237px]"
+        className="flex flex-col relative mt-[118px] lg:mt-[160px] xl:mt-[167px] 2xl:mt-[237px]"
       >
         <div
           ref={rfItems1}
-          className="flex items-center justify-center absolute -top-[29px] xl:-top-1 2xl:-top-[163px] bottom-auto left-auto lg:-left-[201px] xl:-left-[93px] 2xl:-left-[121px] -right-[205px] sm:-right-[147px] lg:right-auto pointer-events-none -z-px"
+          className="flex items-center justify-center absolute -top-[29px] xl:-top-[89px] 2xl:-top-[163px] bottom-auto left-auto lg:-left-[201px] xl:-left-[125px] 2xl:-left-[121px] -right-[205px] sm:-right-[147px] lg:right-auto pointer-events-none -z-px"
         >
           <Image
-            className="rotate-0 lg:rotate-[12deg] w-[394px] 2xl:w-[494px]"
+            className="rotate-0 lg:rotate-[12deg] w-[394px] xl:w-[494px]"
             src="/assets/images/backdrop/ethSea-Items1.png"
             alt="Eth Sea (Items 1 - Backdrop)"
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 100vw"
@@ -102,10 +126,10 @@ const Timeline = () => {
         </div>
         <div
           ref={rfItems2}
-          className="hidden lg:flex items-center justify-center absolute -top-[133px] xl:-top-11 bottom-auto left-auto -right-[229px] xl:-right-[153px] 2xl:-right-[289px] pointer-events-none -z-px"
+          className="hidden lg:flex items-center justify-center absolute -top-[133px] xl:-top-11 2xl:-top-11 bottom-auto left-auto -right-[229px] xl:-right-[217px] 2xl:-right-[289px] pointer-events-none -z-px"
         >
           <Image
-            className="w-[394px] 2xl:w-[494px]"
+            className="w-[394px] xl:w-[455px] 2xl:w-[494px]"
             src="/assets/images/backdrop/ethSea-Items2.png"
             alt="Eth Sea (Items 2 - Backdrop)"
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 100vw"
@@ -116,10 +140,10 @@ const Timeline = () => {
         </div>
         <div
           ref={rfItems3}
-          className="hidden lg:flex items-center justify-center absolute top-auto -bottom-[281px] lg:-bottom-[237px] 2xl:-bottom-[386px] -left-[271px] xl:-left-[241px] 2xl:-left-[393px] right-auto pointer-events-none -z-px"
+          className="hidden lg:flex items-center justify-center absolute top-auto -bottom-[281px] lg:-bottom-[237px] xl:-bottom-[307px] 2xl:-bottom-[386px] -left-[271px] xl:-left-[335px] 2xl:-left-[393px] right-auto pointer-events-none -z-px"
         >
           <Image
-            className=" -rotate-[44deg] w-[437px] 2xl:w-[594px]"
+            className=" -rotate-[44deg] w-[437px] xl:w-[525px] 2xl:w-[594px]"
             src="/assets/images/backdrop/ethSea-Items3.png"
             alt="Eth Sea (Items 3 - Backdrop)"
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 100vw"
@@ -128,9 +152,12 @@ const Timeline = () => {
             quality="87"
           />
         </div>
-        <div className="hidden lg:flex items-center justify-center absolute top-auto -bottom-[277px] lg:-bottom-[318px] xl:-bottom-[257px] 2xl:-bottom-[416px] left-auto -right-[275px] lg:-right-[219px] xl:-right-[189px] pointer-events-none -z-px">
+        <div
+          ref={rfItems4}
+          className="hidden lg:flex items-center justify-center absolute top-auto -bottom-[277px] lg:-bottom-[318px] xl:-bottom-[437px] 2xl:-bottom-[416px] left-auto -right-[275px] lg:-right-[219px] xl:-right-[255px] 2xl:-right-[189px] pointer-events-none -z-px"
+        >
           <Image
-            className="w-[427px] 2xl:w-[594px]"
+            className="w-[427px] xl:w-[565px] 2xl:w-[594px]"
             src="/assets/images/backdrop/ethSea-Items4.png"
             alt="Eth Sea (Items 4 - Backdrop)"
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 100vw"
