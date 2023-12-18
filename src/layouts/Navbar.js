@@ -95,7 +95,10 @@ const Navbar = () => {
               isMenu ? "active" : isScroll ? "active" : "deflt"
             } w-full`}
           >
-            <Links href="/" className={`relative transition ease-in-out`}>
+            <Links
+              href="/"
+              className={`outline-none focus-visible:outline-none relative transition ease-in-out`}
+            >
               <Image
                 className="h-[34px] sm:h-[49px] w-auto"
                 src="/assets/images/ethSea-White.svg"

@@ -17,7 +17,7 @@ const lyFAQ = () => {
 
   return (
     <>
-      <section id="ethSeaFAQ" className="mt-[105px]">
+      <section id="ethSeaFAQ" className="mt-32">
         <div className="flex flex-col px-4 sm:px-8">
           <h2 className="text-white font-beliau text-[40px] sm:text-[56px] lg:text-[64px] leading-[54px] sm:leading-[66px] lg:leading-[64px] font-normal uppercase text-center w-full">
             FAQ

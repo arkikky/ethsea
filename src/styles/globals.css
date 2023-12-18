@@ -163,12 +163,14 @@ body::-webkit-scrollbar-thumb {
 }
 
 .menu .menu-items a {
-  @apply text-white font-spaceGrotesk text-xl font-light;
+  @apply text-white font-spaceGrotesk text-base sm:text-xl font-normal uppercase;
   @apply outline-none focus-visible:outline-none;
+
+  @apply transition duration-300 ease-in-out;
 }
 
 .menu .menu-items:hover a {
-  @apply underline;
+  @apply text-[#DEABB5] underline;
 }
 
 

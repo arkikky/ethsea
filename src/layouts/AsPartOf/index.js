@@ -15,7 +15,7 @@ const AsPartOf = () => {
           <div className="col-span-2 sm:col-span-4 lg:col-span-6">
             <Link
               className="flex flex-col items-center rounded-xl overflow-hidden bg-white outline-none focus-visible:outline-none h-auto"
-              href="https://coinvestasi.com/"
+              href="https://coinfest.asia/"
             >
               <Image
                 className="h-[116px] sm:h-full w-full"
@@ -31,7 +31,7 @@ const AsPartOf = () => {
           <div className="col-span-2 sm:col-span-4 lg:col-span-6">
             <Link
               className="flex flex-col items-center rounded-xl overflow-hidden bg-white outline-none focus-visible:outline-none h-auto"
-              href="https://www.coindesk.id/"
+              href="https://www.web3weekend.asia/"
             >
               <Image
                 className="h-[116px] sm:h-full w-full"

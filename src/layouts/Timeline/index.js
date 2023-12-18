@@ -1,16 +1,66 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import Image from "next/image";
 
 const Timeline = () => {
+  const rfItems1 = useRef(null);
+
+  useEffect(() => {
+    gsap.set(rfItems1.current, { yPercent: -5 });
+
+    const initGspScrll = gsap.context(() => {
+      gsap.registerPlugin(ScrollTrigger);
+
+      let intTl = gsap.timeline({
+        scrollTrigger: {
+          trigger: rfItems1.current,
+          scrub: true,
+          start: "top bottom",
+          end: "top 20%",
+          invalidateOnRefresh: true,
+        },
+      });
+
+      intTl
+        .from(rfItems1.current, {
+          translateY: "0",
+          ease: "none",
+        })
+        .to(rfItems1.current, {
+          translateY: "20px",
+          ease: "none",
+        });
+    });
+    return () => initGspScrll.revert();
+
+    // gsap.to(rfItems1.current, {
+    //   yPercent: 5,
+    //   ease: "none",
+    //   scrollTrigger: {
+    //     trigger: rfItems1.current,
+    //     end: "bottom center",
+    //     scrub: 1,
+    //   },
+    // });
+
+    // return () => {
+    //   undefined;
+    // };
+  }, []);
+
   return (
     <>
       <section
         id="ethSeaTimeline"
         className="flex flex-col relative mt-[118px] lg:mt-[160px] xl:mt-[237px]"
       >
-        <div className="flex items-center justify-center absolute -top-[29px] xl:-top-1 2xl:-top-[163px] bottom-auto left-auto lg:-left-[201px] xl:-left-[93px] 2xl:-left-[121px] right-[211px] sm:-right-[147px] lg:right-auto pointer-events-none -z-px">
+        <div
+          ref={rfItems1}
+          className="flex items-center justify-center absolute -top-[29px] xl:-top-1 2xl:-top-[163px] bottom-auto left-auto lg:-left-[201px] xl:-left-[93px] 2xl:-left-[121px] -right-[205px] sm:-right-[147px] lg:right-auto pointer-events-none -z-px"
+        >
           <Image
-            className="rotate-0 sm:rotate-[12deg] w-[394px] 2xl:w-[494px]"
+            className="rotate-0 lg:rotate-[12deg] w-[394px] 2xl:w-[494px]"
             src="/assets/images/backdrop/ethSea-Items1.png"
             alt="Eth Sea (Items 1 - Backdrop)"
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 100vw"
