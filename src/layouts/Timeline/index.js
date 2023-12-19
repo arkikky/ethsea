@@ -108,7 +108,7 @@ const Timeline = () => {
       <section
         id="ethSeaTimeline"
         ref={rfMain}
-        className="flex flex-col relative mt-[118px] lg:mt-[160px] xl:mt-[167px] 2xl:mt-[237px]"
+        className="flex flex-col relative mt-[118px] lg:mt-[160px] xl:mt-[167px] 2xl:mt-[247px]"
       >
         <div
           ref={rfItems1}
@@ -245,7 +245,7 @@ const Timeline = () => {
                   ETH SEA Roadshow
                 </h3>
                 <p className="text-white font-spaceGrotesk text-sm sm:text-xl font-light mt-1">
-                  Vietnam, Bangkok, Jakarta
+                  Ho Chi Minh City, Bangkok, Jakarta
                 </p>
               </div>
             </div>

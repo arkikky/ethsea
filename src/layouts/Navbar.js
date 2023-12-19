@@ -237,7 +237,7 @@ const Navbar = () => {
             direction="right"
             speed={30}
           >
-            <div className="flex flex-row text-black-900 font-spaceGrotesk text-base font-normal capitalize">
+            <div className="flex flex-row text-black-900 font-spaceGrotesk text-base font-medium capitalize">
               <div className="mr-6">Ho Chi Minh City · Bangkok · Jakarta</div>
               <div className="mr-6">Ho Chi Minh City · Bangkok · Jakarta</div>
               <div className="mr-6">Ho Chi Minh City · Bangkok · Jakarta</div>

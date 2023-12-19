@@ -32,9 +32,9 @@ const Footer = () => {
                   />
                 </div>
                 <p className="text-white font-spaceGrotesk text-base sm:text-xl mt-6">
-                  ETH SEA features an online hackathon where talented developers
-                  will collaborate, innovate, and build the future of
-                  decentralized applications and blockchain solutions.
+                  ETH South East Asia (SEA) taps into the rich talent pool
+                  within emerging markets through an online hackathon coupled
+                  with IRL workshops.
                 </p>
               </div>
               <div className="flex flex-col mt-10 lg:mt-0 lg:mr-0 xl:mr-24">
@@ -116,12 +116,26 @@ const Footer = () => {
         <div>
           <Container>
             <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between pt-17 pb-8">
-              {/* <p className="text-white font-spaceGrotesk text-base font-normal uppercase">
-                Organized by ICN, the organizer of Coinfest Asia.
-              </p> */}
               <p className="text-white font-spaceGrotesk text-base font-normal uppercase mt-4 lg:mt-0">
-                ©{isYear} EthSea, Organized by ICN, the organizer of Coinfest
-                Asia.
+                ©{isYear} EthSea, Organized by{" "}
+                <Link
+                  className="hover:text-[#DEABB5] underline outline-none focus-visible:outline-none transition ease-in-out duration-300"
+                  href="https://indonesiacrypto.network/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  ICN
+                </Link>
+                , the organizer of{" "}
+                <Link
+                  className="hover:text-[#DEABB5] underline outline-none focus-visible:outline-none transition ease-in-out duration-300"
+                  href="https://coinfest.asia/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Coinfest Asia
+                </Link>
+                .
               </p>
             </div>
           </Container>

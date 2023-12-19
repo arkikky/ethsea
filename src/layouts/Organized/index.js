@@ -15,9 +15,11 @@ const Organized = () => {
           <Link
             className="rounded-xl overflow-hidden bg-white outline-none focus-visible:outline-none"
             href="https://indonesiacrypto.network/"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             <Image
-              className="h-[91px] sm:h-full w-full sm:w-[353px] lg:w-[414px] xl:w-[592px]"
+              className="h-[102px] sm:h-full w-full sm:w-[353px] lg:w-[380px]"
               src="/assets/images/partner/organized/ethSea-ICN.svg"
               alt="Eth Sea (Indonesia Crypto Network - Organized Partner)"
               height={324}

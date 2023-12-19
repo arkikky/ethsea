@@ -10,10 +10,9 @@ import Container from "@components/Container";
 
 // @layouts
 import Header from "@layouts/Header";
-import Benefit from "@layouts/Benefit";
+import Benefit from "@layouts/About";
 import Board from "@layouts/Board";
 // import MentorJudges from "@layouts/MentorJudges";
-// import Partner from "@layouts/Partner";
 import Timeline from "@layouts/Timeline";
 import StrategicPartners from "@layouts/StrategicPartners";
 import Organized from "@layouts/Organized";

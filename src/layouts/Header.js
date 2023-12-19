@@ -45,9 +45,9 @@ const Header = () => {
               Unveiling Web3 Marvels from Southeast Asia
             </h1>
             <p className="text-white font-spaceGrotesk text-base sm:text-2xl font-light mt-4">
-              ETH SEA features an online hackathon where talented developers
-              will collaborate, innovate, and build the future of decentralized
-              applications and blockchain solutions.
+              {
+                "ETH South East Asia (SEA) taps into the rich talent pool within emerging markets through an online hackathon coupled with IRL workshops."
+              }
             </p>
             <div className="inline-flex flex-col sm:flex-row items-center flex-wrap mt-8 w-full">
               <Link

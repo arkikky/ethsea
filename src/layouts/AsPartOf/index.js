@@ -11,14 +11,14 @@ const AsPartOf = () => {
             As part of
           </h2>
         </div>
-        <div className="supports-grid:grid grid-cols-4 sm:grid-cols-8 lg:grid-cols-12 gap-y-2 sm:gap-y-4 gap-x-2 sm:gap-x-4 mt-8 relative">
+        <div className="supports-grid:grid grid-cols-4 sm:grid-cols-8 lg:grid-cols-12 gap-y-2 sm:gap-y-4 gap-x-2 sm:gap-x-4 relative mt-6 sm:mt-10 mx-auto w-full max-w-full sm:max-w-[776px]">
           <div className="col-span-2 sm:col-span-4 lg:col-span-6">
             <Link
               className="flex flex-col items-center rounded-xl overflow-hidden bg-white outline-none focus-visible:outline-none h-auto"
               href="https://coinfest.asia/"
             >
               <Image
-                className="h-[91px] sm:h-full w-full"
+                className="h-[102px] sm:h-full w-full"
                 src="/assets/images/partner/aspart-of/ethSea-CoinfestAsia.svg"
                 alt="Eth Sea (Coinfest Asia -  As part of Partner)"
                 sizes="(max-width: 768px) 150vw, (max-width: 1200px) 50vw, 50vw"
@@ -34,7 +34,7 @@ const AsPartOf = () => {
               href="https://www.web3weekend.asia/"
             >
               <Image
-                className="h-[91px] sm:h-full w-full"
+                className="h-[102px] sm:h-full w-full"
                 src="/assets/images/partner/aspart-of/ethSea-W3W.svg"
                 alt="Eth Sea (W3W -  As part of Partner)"
                 sizes="(max-width: 768px) 150vw, (max-width: 1200px) 50vw, 50vw"
