@@ -18,7 +18,7 @@ const StrategicPartners = () => {
               href="https://coinvestasi.com/"
             >
               <Image
-                className="h-[91px] sm:h-full w-full"
+                className="h-[102px] sm:h-full w-full"
                 src="/assets/images/partner/strategies/ethSea-Coinvestasi.svg"
                 alt="Eth Sea (Coinvestasi - Strategic Partners Partner)"
                 sizes="(max-width: 768px) 150vw, (max-width: 1200px) 50vw, 50vw"
@@ -34,7 +34,7 @@ const StrategicPartners = () => {
               href="https://www.coindesk.id/"
             >
               <Image
-                className="h-[91px] sm:h-full w-full"
+                className="h-[102px] sm:h-full w-full"
                 src="/assets/images/partner/strategies/ethSea-Coindesk.svg"
                 alt="Eth Sea (CoinDesk Indonesia - Strategic Partners Partner)"
                 sizes="(max-width: 768px) 150vw, (max-width: 1200px) 50vw, 50vw"
