@@ -8,11 +8,11 @@ const Benefit = () => {
         <div className="flex flex-col">
           <div className="relative w-max">
             <Image
-              className="h-[50px] sm:h-[64px] w-auto"
+              className="h-[40px] sm:h-[64px] w-[88px] sm:w-auto"
               src="/assets/images/ethSea-White.svg"
               alt="Eth Sea (Brand Primary - Benefit)"
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
-              height={69}
+              height={58}
               width={127}
               quality="87"
             />

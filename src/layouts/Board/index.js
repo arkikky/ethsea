@@ -20,12 +20,9 @@ const Board = () => {
                 Present your solutions globally, enhancing visibility and
                 unlocking new opportunities.
               </p>
-              <Link
-                className="text-[#DEABB5] font-spaceGrotesk text-base sm:text-2xl font-semibold first-letter:uppercase group-active:underline group-hover:underline outline-none focus-visible:outline-none relative mt-4 z-[5]"
-                href=""
-              >
-                Apply Now
-              </Link>
+              <span className="text-[#DEABB5] font-spaceGrotesk text-base sm:text-2xl font-semibold first-letter:uppercase group-active:underline group-hover:underline outline-none focus-visible:outline-none cursor-default relative mt-4 z-[5]">
+                Apply Soon
+              </span>
             </div>
           </div>
           <div className="col-span-full sm:col-span-4 lg:col-span-6">
@@ -37,12 +34,9 @@ const Board = () => {
                 Unite at meetups, building key networks and fostering community
                 in the Web3 space.
               </p>
-              <Link
-                className="text-[#DEABB5] font-spaceGrotesk text-base sm:text-2xl font-semibold first-letter:uppercase group-hover:underline outline-none focus-visible:outline-none relative mt-4 z-[5]"
-                href=""
-              >
-                Apply Now
-              </Link>
+              <span className="text-[#DEABB5] font-spaceGrotesk text-base sm:text-2xl font-semibold first-letter:uppercase group-hover:underline outline-none focus-visible:outline-none cursor-default relative mt-4 z-[5]">
+                Apply Soon
+              </span>
             </div>
           </div>
         </div>

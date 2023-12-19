@@ -153,20 +153,6 @@ const Navbar = () => {
                     </li>
                     <li>
                       <Link
-                        href="ethSeaPartners"
-                        activeClass="active"
-                        to="ethSeaPartners"
-                        spy={true}
-                        hashSpy={false}
-                        smooth={"easeInOutCubic"}
-                        offset={-223}
-                        duration={500}
-                      >
-                        Partners
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
                         href="ethSeaTimeline"
                         activeClass="active"
                         to="ethSeaTimeline"
@@ -177,6 +163,20 @@ const Navbar = () => {
                         duration={500}
                       >
                         Timeline
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href="ethSeaPartners"
+                        activeClass="active"
+                        to="ethSeaPartners"
+                        spy={true}
+                        hashSpy={false}
+                        smooth={"easeInOutCubic"}
+                        offset={-223}
+                        duration={500}
+                      >
+                        Partners
                       </Link>
                     </li>
                     <li>

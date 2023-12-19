@@ -60,20 +60,6 @@ const Footer = () => {
                       </li>
                       <li className="menu-items">
                         <Link
-                          href="ethSeaPartners"
-                          activeClass="active"
-                          to="ethSeaPartners"
-                          spy={true}
-                          hashSpy={false}
-                          smooth={"easeInOutCubic"}
-                          offset={-223}
-                          duration={500}
-                        >
-                          Partners
-                        </Link>
-                      </li>
-                      <li className="menu-items">
-                        <Link
                           href="ethSeaTimeline"
                           activeClass="active"
                           to="ethSeaTimeline"
@@ -84,6 +70,20 @@ const Footer = () => {
                           duration={500}
                         >
                           Timeline
+                        </Link>
+                      </li>
+                      <li className="menu-items">
+                        <Link
+                          href="ethSeaPartners"
+                          activeClass="active"
+                          to="ethSeaPartners"
+                          spy={true}
+                          hashSpy={false}
+                          smooth={"easeInOutCubic"}
+                          offset={-223}
+                          duration={500}
+                        >
+                          Partners
                         </Link>
                       </li>
                       <li className="menu-items">
