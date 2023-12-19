@@ -112,10 +112,10 @@ const Timeline = () => {
       >
         <div
           ref={rfItems1}
-          className="flex items-center justify-center absolute -top-[29px] xl:-top-[89px] 2xl:-top-[163px] bottom-auto left-auto lg:-left-[201px] xl:-left-[125px] 2xl:-left-[121px] -right-[205px] sm:-right-[147px] lg:right-auto pointer-events-none -z-px"
+          className="flex items-center justify-center absolute -top-[29px] xl:-top-[89px] 2xl:-top-[163px] bottom-auto left-auto lg:-left-[201px] xl:-left-[153px] 2xl:-left-[121px] -right-[205px] sm:-right-[147px] lg:right-auto pointer-events-none -z-px"
         >
           <Image
-            className="rotate-0 lg:rotate-[12deg] w-[394px] xl:w-[494px]"
+            className="rotate-0 lg:rotate-12 xl:rotate-[8deg] 2xl:rotate-12 w-[394px] xl:w-[494px]"
             src="/assets/images/backdrop/ethSea-Items1.png"
             alt="Eth Sea (Items 1 - Backdrop)"
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 100vw"

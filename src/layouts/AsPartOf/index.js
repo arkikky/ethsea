@@ -5,7 +5,7 @@ import Image from "next/image";
 const AsPartOf = () => {
   return (
     <>
-      <section className="flex flex-col mt-19">
+      <section className="flex flex-col mt-12 sm:mt-19">
         <div className="flex flex-col px-0 sm:px-8">
           <h2 className="text-white font-beliau text-[34px] sm:text-[56px] lg:text-[64px] leading-[34px] sm:leading-[66px] lg:leading-[64px] font-normal capitalize text-center w-full">
             As part of
@@ -18,7 +18,7 @@ const AsPartOf = () => {
               href="https://coinfest.asia/"
             >
               <Image
-                className="h-[116px] sm:h-full w-full"
+                className="h-[91px] sm:h-full w-full"
                 src="/assets/images/partner/aspart-of/ethSea-CoinfestAsia.svg"
                 alt="Eth Sea (Coinfest Asia -  As part of Partner)"
                 sizes="(max-width: 768px) 150vw, (max-width: 1200px) 50vw, 50vw"
@@ -34,7 +34,7 @@ const AsPartOf = () => {
               href="https://www.web3weekend.asia/"
             >
               <Image
-                className="h-[116px] sm:h-full w-full"
+                className="h-[91px] sm:h-full w-full"
                 src="/assets/images/partner/aspart-of/ethSea-W3W.svg"
                 alt="Eth Sea (W3W -  As part of Partner)"
                 sizes="(max-width: 768px) 150vw, (max-width: 1200px) 50vw, 50vw"

@@ -12,8 +12,8 @@ const Benefit = () => {
               src="/assets/images/ethSea-White.svg"
               alt="Eth Sea (Brand Primary - Benefit)"
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
-              height={32}
-              width={32}
+              height={69}
+              width={127}
               quality="87"
             />
           </div>
