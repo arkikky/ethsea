@@ -1,6 +1,6 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-![Ethereum Sea Logo](https://nextjs.org/)
+![Ethereum Sea Logo](https://hub.coinvestasi.com/uploads/ethsea_Thumbnails_app_Share_Link_d44538de2d.jpg)
 
 ## Getting Started
 
