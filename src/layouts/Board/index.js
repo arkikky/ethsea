@@ -17,7 +17,7 @@ const Board = () => {
                 {"Hackathon (Online)"}
               </h3>
               <p className="text-white font-spaceGrotesk text-sm sm:text-base lg:text-2xl font-light first-letter:uppercase mt-2">
-                Innovate and deliver your solutions in an online setting.
+                Hack and present your innovation to solution providers.
               </p>
               <span className="text-[#DEABB5] font-spaceGrotesk text-base sm:text-2xl font-semibold first-letter:uppercase capitalize group-active:underline group-hover:underline outline-none focus-visible:outline-none cursor-default relative mt-4 z-[5]">
                 Coming Soon
@@ -30,8 +30,7 @@ const Board = () => {
                 {"Hacker House (Offline/IRL)"}
               </h3>
               <p className="text-white font-spaceGrotesk text-sm sm:text-base lg:text-2xl font-light first-letter:uppercase mt-2">
-                Unite at meetups, building key networks and fostering community
-                in the Web3 space.
+                Unite at meetups and build key networks in the Web3 space.
               </p>
               <span className="text-[#DEABB5] font-spaceGrotesk text-base sm:text-2xl font-semibold first-letter:uppercase capitalize group-hover:underline outline-none focus-visible:outline-none cursor-default relative mt-4 z-[5]">
                 Coming Soon

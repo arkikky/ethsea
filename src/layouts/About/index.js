@@ -29,7 +29,7 @@ const Benefit = () => {
                   Talent Pool
                 </h3>
                 <p className="text-white font-spaceGrotesk text-sm sm:text-base lg:text-xl font-light first-letter:uppercase mt-2 min-h-min lg:min-h-[112px]">
-                  Instantly tap into the deep developer talent pools across
+                  Instantly tap into the rich talent pool of developers across
                   South East Asia.
                 </p>
               </div>
@@ -53,8 +53,8 @@ const Benefit = () => {
                   Emerging Markets
                 </h3>
                 <p className="text-white font-spaceGrotesk text-sm sm:text-base lg:text-xl font-light first-letter:uppercase mt-2 min-h-min lg:min-h-[112px]">
-                  SEA is the fastest growing web3 market globally, with a total
-                  population of 675 million.
+                  Uncover the fastest growing tech markets where unicorns are
+                  born.
                 </p>
               </div>
             </div>
@@ -77,8 +77,8 @@ const Benefit = () => {
                   Opportunities
                 </h3>
                 <p className="text-white font-spaceGrotesk text-sm sm:text-base lg:text-xl font-light first-letter:uppercase mt-2 min-h-min lg:min-h-[112px]">
-                  Uncover talent, innovation and ...... in this hyper growth
-                  market
+                  Amplify your brand to hyper growth market through our online &
+                  offline programs.
                 </p>
               </div>
             </div>
