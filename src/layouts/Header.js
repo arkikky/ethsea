@@ -24,7 +24,7 @@ const Header = () => {
         </div>
 
         {/* Header Items Backdrop (Polygon) */}
-        <div className="absolute inset-y-0 left-auto -right-[89px] sm:-right-[219px] xl:right-0 h-[487px] sm:h-full -z-px">
+        <div className="absolute inset-y-0 left-auto -right-[89px] sm:-right-[219px] xl:right-0 h-[487px] sm:h-full sm:w-full max-w-[369px] sm:max-w-[712px] -z-px">
           <Image
             className="object-bottom object-cover h-full w-full"
             src="/assets/images/ethSeaPolygon-Header.png"

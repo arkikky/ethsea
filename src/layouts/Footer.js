@@ -118,23 +118,23 @@ const Footer = () => {
             <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between pt-17 pb-8">
               <p className="text-white font-spaceGrotesk text-base font-normal uppercase mt-4 lg:mt-0">
                 ©{isYear} EthSea, Organized by{" "}
-                <Link
+                <Links
                   className="hover:text-[#DEABB5] underline outline-none focus-visible:outline-none transition ease-in-out duration-300"
                   href="https://indonesiacrypto.network/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   ICN
-                </Link>
+                </Links>
                 , the organizer of{" "}
-                <Link
+                <Links
                   className="hover:text-[#DEABB5] underline outline-none focus-visible:outline-none transition ease-in-out duration-300"
                   href="https://coinfest.asia/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   Coinfest Asia
-                </Link>
+                </Links>
                 .
               </p>
             </div>
