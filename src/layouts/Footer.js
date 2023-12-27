@@ -119,7 +119,7 @@ const Footer = () => {
               <p className="text-white font-spaceGrotesk text-base font-normal uppercase mt-4 lg:mt-0">
                 ©{isYear} EthSea, Organized by{" "}
                 <Links
-                  className="hover:text-[#DEABB5] underline outline-none focus-visible:outline-none transition ease-in-out duration-300"
+                  className="hover:text-[#DEABB5] hover:underline outline-none focus-visible:outline-none transition ease-in-out duration-300"
                   href="https://indonesiacrypto.network/"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -128,7 +128,7 @@ const Footer = () => {
                 </Links>
                 , the organizer of{" "}
                 <Links
-                  className="hover:text-[#DEABB5] underline outline-none focus-visible:outline-none transition ease-in-out duration-300"
+                  className="hover:text-[#DEABB5] hover:underline outline-none focus-visible:outline-none transition ease-in-out duration-300"
                   href="https://coinfest.asia/"
                   target="_blank"
                   rel="noopener noreferrer"

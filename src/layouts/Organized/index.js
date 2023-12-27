@@ -13,7 +13,7 @@ const Organized = () => {
         </div>
         <div className="flex flex-col items-center justify-center mt-8">
           <Link
-            className="rounded-xl overflow-hidden bg-white outline-none focus-visible:outline-none"
+            className="rounded-xl overflow-hidden bg-white outline-none focus-visible:outline-none w-full max-w-[167px] sm:max-w-max"
             href="https://indonesiacrypto.network/"
             target="_blank"
             rel="noopener noreferrer"
