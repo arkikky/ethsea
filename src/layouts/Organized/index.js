@@ -19,7 +19,7 @@ const Organized = () => {
             rel="noopener noreferrer"
           >
             <Image
-              className="h-[102px] sm:h-full w-full sm:w-[353px] lg:w-[380px]"
+              className="h-[91px] sm:h-full w-full sm:w-[353px] lg:w-[380px]"
               src="/assets/images/partner/organized/ethSea-ICN.svg"
               alt="Eth Sea (Indonesia Crypto Network - Organized Partner)"
               height={324}
