@@ -16,7 +16,7 @@ const Footer = () => {
 
   return (
     <>
-      <footer className="flex flex-col mt-28 sm:mt-[165px] relative">
+      <footer className="flex flex-col mt-28 sm:mt-32 xl:mt-[165px] relative">
         <div className="w-full">
           <Container>
             <div className="flex flex-col xl:flex-row items-start justify-between">
