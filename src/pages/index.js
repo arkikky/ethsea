@@ -31,7 +31,6 @@ const Home = () => {
 
   useEffect(() => {
     import("locomotive-scroll").then((locomotiveModule) => {
-      // const locoScroll = new locomotiveModule();
       const locoScroll = new locomotiveModule.default({});
     });
 
