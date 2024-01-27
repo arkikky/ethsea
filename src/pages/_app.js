@@ -2,10 +2,10 @@ import React from "react";
 import getConfig from "next/config";
 import Head from "next/head";
 
-// @Get .config
+// @get .config
 const { publicRuntimeConfig } = getConfig();
 
-// @CSS Style (Global)
+// @style-css (global)
 import "@styles/globals.css";
 
 // @components
@@ -14,7 +14,7 @@ import Layouts from "@layouts/Layouts";
 const App = ({ Component, pageProps }) => {
   return (
     <>
-      {/* @Head */}
+      {/* @head */}
       <Head>
         <meta charSet="UTF-8" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
@@ -38,7 +38,7 @@ const App = ({ Component, pageProps }) => {
         <link rel="canonical" href={`${publicRuntimeConfig.siteUrl}`} />
       </Head>
 
-      {/* @Main */}
+      {/* @main */}
       <Layouts>
         <Component {...pageProps} />
       </Layouts>

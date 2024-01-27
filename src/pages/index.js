@@ -46,8 +46,9 @@ const Home = () => {
         <title>{`${publicRuntimeConfig.siteTitle}`}</title>
         <meta name="title" content={`${publicRuntimeConfig.siteTitle}`} />
         <meta name="description" content={publicRuntimeConfig.siteDesc} />
+        <meta property="og:type" content="website" />
 
-        {/* Open Graph / Facebook */}
+        {/* @openGraph/facebook */}
         <meta property="og:type" content="website" />
         <meta property="og:url" content={publicRuntimeConfig.siteUrl} />
         <meta
@@ -60,10 +61,12 @@ const Home = () => {
         />
         <meta
           property="og:image"
-          content={`${process.env.NEXT_PUBLIC_UPLOAD_STORAGE}/uploads/ethsea_Thumbnails_app_Share_Link_d44538de2d.jpg`}
+          content={
+            "/assets/images/ethsea_Thumbnails_app_Share_Link_d44538de2d.jpg"
+          }
         />
 
-        {/* Twitter */}
+        {/* @twitter */}
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:url" content={publicRuntimeConfig.siteUrl} />
         <meta
@@ -81,33 +84,33 @@ const Home = () => {
       </Head>
 
       <main className="overflow-hidden">
-        {/* Header */}
+        {/* @header */}
         <Header />
 
         <Container>
           <div id="ethSeaAbout">
-            {/* @Benefit (Layouts) */}
+            {/* @benefit */}
             <Benefit />
 
-            {/* @Board (Layouts) */}
+            {/* @board */}
             <Board />
           </div>
 
-          {/* @Timeline */}
+          {/* @timeline */}
           <Timeline />
 
           <div id="ethSeaPartners">
-            {/* @Strategic Partners (Layouts) */}
+            {/* @strategic-partners */}
             <StrategicPartners />
 
-            {/* @Organized by (Layouts) */}
+            {/* @organized */}
             <Organized />
 
-            {/* @Organized by (Layouts) */}
+            {/* @organized */}
             <AsPartOf />
           </div>
 
-          {/* @FAQ (Layouts) */}
+          {/* @fAQ */}
           <FAQ />
         </Container>
       </main>

@@ -7,13 +7,13 @@ import Footer from "@layouts/Footer";
 const Layouts = ({ children }) => {
   return (
     <>
-      {/* @Navbar */}
+      {/* @navbar */}
       <Navbar />
 
-      {/* @Main */}
+      {/* @main */}
       {children}
 
-      {/* @Footer */}
+      {/* @footer */}
       <Footer />
     </>
   );
