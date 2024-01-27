@@ -28,6 +28,23 @@ const App = ({ Component, pageProps }) => {
           crossOrigin="true"
         />
         <meta name="author" content="Indonesia Crypto Network" />
+
+        {/* @openGraph */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={publicRuntimeConfig.siteUrl} />
+        <meta
+          property="og:title"
+          content={`${publicRuntimeConfig.siteTitle}`}
+        />
+        <meta
+          property="og:description"
+          content={publicRuntimeConfig.siteDesc}
+        />
+        <meta
+          property="og:image"
+          content={`${process.env.NEXT_PUBLIC_UPLOAD_STORAGE}/uploads/ethsea_Thumbnails_app_Share_Link_d44538de2d.jpg`}
+        />
+
         <link rel="mask-icon" href="/favicon.png" color="#141414" />
         <meta name="msapplication-TileColor" content="#141414" />
         <meta name="theme-color" content="#141414" />

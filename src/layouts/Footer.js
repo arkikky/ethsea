@@ -44,7 +44,14 @@ const Footer = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      X
+                      <Image
+                        className="mx-auto h-6 w-6"
+                        src={"/assets/svg/ethTwitter-White.svg"}
+                        alt={`Eth Sea (LinkedIn - Social Media)`}
+                        height={24}
+                        width={24}
+                        quality="87"
+                      />
                     </Links>
                   </li>
                   <li className="relative mr-4 last:mr-0">
@@ -54,7 +61,14 @@ const Footer = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      LinkedIn
+                      <Image
+                        className="mx-auto h-6 w-6"
+                        src={"/assets/svg/ethLinkedin-White.svg"}
+                        alt={`Eth Sea (LinkedIn - Social Media)`}
+                        height={24}
+                        width={24}
+                        quality="87"
+                      />
                     </Links>
                   </li>
                 </ul>

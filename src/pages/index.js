@@ -7,6 +7,7 @@ const { publicRuntimeConfig } = getConfig();
 
 // @components
 import Container from "@components/Container";
+import StructuredData from "@components/StructuredData";
 
 // @layouts
 import Header from "@layouts/Header";
@@ -20,6 +21,43 @@ import AsPartOf from "@layouts/AsPartOf";
 import FAQ from "@layouts/FAQ";
 
 const Home = () => {
+  // @structuredData (Event)
+  const strctredEvent = {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    name: "ETH Sea",
+    startDate: "2024-04-01T06:00:00-05:00",
+    endDate: "2024-05-30T07:00-05:00",
+    eventStatus: "https://schema.org/EventScheduled",
+    eventAttendanceMode: "https://schema.org/OnlineEventAttendanceMode",
+    location: {
+      "@type": "VirtualLocation",
+      url: "https://www.ethsea.com/",
+    },
+    image: [
+      `${process.env.NEXT_PUBLIC_UPLOAD_STORAGE}/uploads/ethsea_Thumbnails_app_Share_Link_d44538de2d.jpg`,
+    ],
+    description:
+      "ETH South East Asia (SEA) taps into the rich talent pool within emerging markets through an online hackathon coupled with IRL workshops.",
+    offers: {
+      "@type": "Offer",
+      url: "https://www.ethsea.com/",
+      price: "0",
+      priceCurrency: "USD",
+      availability: "https://schema.org/InStock",
+      validFrom: "2024-02-01T12:00",
+    },
+    organizer: {
+      "@type": "Organization",
+      name: "Indonesia Crypto Network",
+      url: "https://indonesiacrypto.network",
+    },
+    performer: {
+      "@type": "Person",
+      name: "ETH Sea",
+    },
+  };
+
   // @preline (Add Plugins - Active)
   useEffect(() => {
     import("preline");
@@ -41,12 +79,14 @@ const Home = () => {
 
   return (
     <>
-      {/* Head */}
+      {/* @structuredData */}
+      <StructuredData data={strctredEvent} />
+
+      {/* @head */}
       <Head>
         <title>{`${publicRuntimeConfig.siteTitle}`}</title>
         <meta name="title" content={`${publicRuntimeConfig.siteTitle}`} />
         <meta name="description" content={publicRuntimeConfig.siteDesc} />
-        <meta property="og:type" content="website" />
 
         {/* @openGraph/facebook */}
         <meta property="og:type" content="website" />

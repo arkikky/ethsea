@@ -91,7 +91,7 @@ module.exports = {
     require("@tailwindcss/forms"),
     require("@tailwindcss/typography"),
 
-    // Variant
+    // @variant
     ({ addVariant }) => {
       addVariant("hocus", ["&:hover", "&:focus"]);
       addVariant("supports-grid", "@supports (display: grid)");

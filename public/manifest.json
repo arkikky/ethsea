@@ -1,15 +1,17 @@
 {
-  "name": "ETHSea",
-  "short_name": "ICN",
-  "description": "ETH SEA features an online hackathon where talented developers will collaborate, innovate, and build the future of decentralized applications and blockchain solutions.",
+  "name": "ETH Sea",
+  "short_name": "ETHSea",
+  "description": "ETH South East Asia (SEA) taps into the rich talent pool within emerging markets through an online hackathon coupled with IRL workshops.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#141414",
   "theme_color": "#141414",
-  "icons": [{
-    "src": "/favicon-512x512.png",
-    "sizes": "512x512",
-    "type": "image/png",
-    "purpose": "any maskable"
-  }]
+  "icons": [
+    {
+      "src": "/favicon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
 }

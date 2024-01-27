@@ -174,8 +174,6 @@ body::-webkit-scrollbar-thumb {
   @apply text-[#DEABB5] underline;
 }
 
-
-
 /* Text Gradient */
 .text-gradient-label {
   background: linear-gradient(90deg, #f4b100 0%, #deabb5 52.6%, #23a9a8 100%);
@@ -196,12 +194,16 @@ body::-webkit-scrollbar-thumb {
   background: linear-gradient(to left, #5458c0, #deabb5, #5458c0, #deabb5);
   @apply w-[300%];
 
-  @apply -z-px;
+  @apply z-0;
   @apply transition-all duration-300 ease-in-out;
 }
 
 .bg-gradient-primary:hover::before {
   @apply -left-full;
+}
+
+.bg-gradient-primary span {
+  @apply z-px;
 }
 
 .bg-gradient-secondary {
@@ -248,19 +250,19 @@ body::-webkit-scrollbar-thumb {
 
 /* Timeline */
 .bgLine-Timeline {
-  background: linear-gradient(0deg, #5458C0 -7.54%, #DEABB5 101.05%);
+  background: linear-gradient(0deg, #5458c0 -7.54%, #deabb5 101.05%);
 }
 
 .bgLine-Timeline::before {
   @apply content-[''];
-  background: linear-gradient(180deg, #141414 0%, rgba(20, 20, 20, 0.00) 100%);
+  background: linear-gradient(180deg, #141414 0%, rgba(20, 20, 20, 0) 100%);
   @apply absolute top-0 bottom-auto inset-x-0;
   @apply h-[177px];
 }
 
 .bgLine-Timeline::after {
   @apply content-[''];
-  background: linear-gradient(0deg, #141414 0%, rgba(20, 20, 20, 0.00) 100%);
+  background: linear-gradient(0deg, #141414 0%, rgba(20, 20, 20, 0) 100%);
   @apply absolute top-auto bottom-0 inset-x-0;
   @apply h-[177px];
 }
