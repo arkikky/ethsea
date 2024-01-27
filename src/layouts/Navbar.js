@@ -21,7 +21,7 @@ const Navbar = () => {
     setMenu((prev) => !prev);
   }, [setMenu]);
 
-  // @Scroll
+  // @scroll
   const handleScroll = () => {
     const currentScrollPos = window.scrollY;
 
@@ -203,10 +203,18 @@ const Navbar = () => {
                 )}
               </ul>
               <div
-                className={`flex flex-row items-center justify-start ml-0 sm:ml-4 w-full lg:w-max`}
+                className={`flex flex-col sm:flex-row items-center justify-start mt-4 lg:mt-0 ml-0 sm:ml-4 w-full lg:w-max`}
               >
                 <Links
-                  className="inline-flex flex-row items-center justify-center bg-gradient-primary border border-solid border-white rounded-xl text-white font-spaceGrotesk text-base font-medium capitalize outline-none focus-visible:outline-none py-4 px-4 w-full"
+                  className="inline-flex flex-row items-center justify-center bg-transparent border border-solid border-white rounded-xl text-white font-spaceGrotesk text-base font-medium capitalize outline-none focus-visible:outline-none py-4 px-4 mb-3 sm:mb-0 last:mb-0 mr-0 sm:mr-3 last:mr-0 w-full"
+                  href="https://share.hsforms.com/15eAlxOlASAiSLpqC_YyMqAcjggg"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Partner Inquiry
+                </Links>
+                <Links
+                  className="inline-flex flex-row items-center justify-center bg-gradient-primary border border-solid border-white rounded-xl text-white font-spaceGrotesk text-base font-medium capitalize outline-none focus-visible:outline-none py-4 px-4 mb-3 sm:mb-0 last:mb-0 mr-0 sm:mr-3 last:mr-0 w-full min-w-fit"
                   href=""
                 >
                   <svg
@@ -237,7 +245,7 @@ const Navbar = () => {
             direction="right"
             speed={30}
           >
-            <div className="flex flex-row text-black-900 font-spaceGrotesk text-base font-medium capitalize">
+            <div className="flex flex-row text-black-900 font-spaceGrotesk text-sm sm:text-base font-medium capitalize">
               <div className="mr-6">Ho Chi Minh City · Bangkok · Jakarta</div>
               <div className="mr-6">Ho Chi Minh City · Bangkok · Jakarta</div>
               <div className="mr-6">Ho Chi Minh City · Bangkok · Jakarta</div>

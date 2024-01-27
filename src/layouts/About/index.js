@@ -4,9 +4,9 @@ import Image from "next/image";
 const Benefit = () => {
   return (
     <>
-      <section id="ethSeaAbout" className="flex flex-col pt-12">
+      <section id="ethSeaAbout" className="flex flex-col pt-8">
         <div className="flex flex-col px-0 sm:px-8">
-          <h2 className="text-white font-beliau text-[34px] sm:text-[56px] lg:text-[64px] leading-[34px] sm:leading-[66px] lg:leading-[64px] font-normal capitalize text-center mx-auto w-full max-w-full sm:max-w-[627px]">
+          <h2 className="text-white font-beliau text-[34px] sm:text-[56px] lg:text-[64px] leading-[34px] sm:leading-[66px] lg:leading-[70px] font-normal capitalize text-center mx-auto w-full max-w-full sm:max-w-[627px]">
             Why Participate at ETH SEA
           </h2>
         </div>
@@ -53,8 +53,8 @@ const Benefit = () => {
                   Emerging Markets
                 </h3>
                 <p className="text-white font-spaceGrotesk text-sm sm:text-base lg:text-xl font-light first-letter:uppercase mt-2 min-h-min lg:min-h-[112px]">
-                  Uncover the fastest growing tech markets where unicorns are
-                  born.
+                  Uncover the fastest growing Web3 market, where 60% of crypto
+                  adoption is dominated by emerging markets in Asia
                 </p>
               </div>
             </div>

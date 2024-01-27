@@ -4,7 +4,7 @@ import Link from "next/link";
 const Board = () => {
   return (
     <>
-      <section className="flex flex-col mt-19 sm:mt-28">
+      <section className="flex flex-col mt-19 sm:mt-34">
         <div className="flex flex-col px-0 sm:px-8">
           <h2 className="text-white font-beliau text-[34px] sm:text-[56px] lg:text-[64px] leading-[34px] sm:leading-[66px] lg:leading-[64px] font-normal capitalize text-center w-full">
             What’s on ETH SEA

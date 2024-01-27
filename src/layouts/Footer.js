@@ -20,7 +20,7 @@ const Footer = () => {
         <div className="w-full">
           <Container>
             <div className="flex flex-col xl:flex-row items-start justify-between">
-              <div className="flex flex-col w-max max-w-full sm:max-w-[557px]">
+              <div className="flex flex-col w-max max-w-full sm:max-w-[557px] z-10">
                 <div className="flex flex-col items-start w-max">
                   <Image
                     className="h-[44px] sm:h-[59px] w-auto"
@@ -36,6 +36,28 @@ const Footer = () => {
                   within emerging markets through an online hackathon coupled
                   with IRL workshops.
                 </p>
+                <ul className="flex flex-row relative pl-0 mt-6">
+                  <li className="relative mr-4 last:mr-0">
+                    <Links
+                      className="outline-none focus-visible:outline-none hover:underline"
+                      href="https://twitter.com/ethereum_sea"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      X
+                    </Links>
+                  </li>
+                  <li className="relative mr-4 last:mr-0">
+                    <Links
+                      className="outline-none focus-visible:outline-none hover:underline"
+                      href="https://www.linkedin.com/showcase/ethereum-sea/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      LinkedIn
+                    </Links>
+                  </li>
+                </ul>
               </div>
               <div className="flex flex-col mt-10 lg:mt-0 lg:mr-0 xl:mr-24">
                 <h2 className="text-white font-spaceGrotesk text-xl font-semibold uppercase">
@@ -113,33 +135,31 @@ const Footer = () => {
             </div>
           </Container>
         </div>
-        <div>
-          <Container>
-            <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between pt-17 pb-8">
-              <p className="text-white font-spaceGrotesk text-base font-normal uppercase mt-4 lg:mt-0">
-                ©{isYear} EthSea, Organized by{" "}
-                <Links
-                  className="hover:text-[#DEABB5] hover:underline outline-none focus-visible:outline-none transition ease-in-out duration-300"
-                  href="https://indonesiacrypto.network/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  ICN
-                </Links>
-                , the organizer of{" "}
-                <Links
-                  className="hover:text-[#DEABB5] hover:underline outline-none focus-visible:outline-none transition ease-in-out duration-300"
-                  href="https://coinfest.asia/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Coinfest Asia
-                </Links>
-                .
-              </p>
-            </div>
-          </Container>
-        </div>
+        <Container>
+          <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between pt-20 pb-8">
+            <p className="text-white font-spaceGrotesk text-base font-normal uppercase mt-4 lg:mt-0">
+              ©{isYear} EthSea, Organized by{" "}
+              <Links
+                className="hover:text-[#DEABB5] hover:underline outline-none focus-visible:outline-none transition ease-in-out duration-300"
+                href="https://indonesiacrypto.network/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                ICN
+              </Links>
+              , the organizer of{" "}
+              <Links
+                className="hover:text-[#DEABB5] hover:underline outline-none focus-visible:outline-none transition ease-in-out duration-300"
+                href="https://coinfest.asia/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Coinfest Asia
+              </Links>
+              .
+            </p>
+          </div>
+        </Container>
       </footer>
     </>
   );

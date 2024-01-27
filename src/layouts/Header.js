@@ -8,8 +8,8 @@ import Container from "@components/Container";
 const Header = () => {
   return (
     <>
-      <header className="overflow-hidden relative mb-15 pt-[125px] sm:pt-[187px] h-auto sm:h-[940px] w-full">
-        {/* Header Backdrop (Cover Line) */}
+      <header className="overflow-hidden relative mb-14 sm:mb-24 xl:mb-32 pt-[125px] sm:pt-[187px] h-auto w-full">
+        {/* @header backdrop (Cover Line) */}
         <div className="absolute inset-y-0 inset-x-0 -z-px">
           <Image
             className="object-bottom object-cover h-full w-full"
@@ -23,35 +23,59 @@ const Header = () => {
           />
         </div>
 
-        {/* Header Items Backdrop (Polygon) */}
-        <div className="absolute inset-y-0 left-auto -right-[89px] sm:-right-[219px] xl:right-0 h-[487px] sm:h-full sm:w-full max-w-[369px] sm:max-w-[712px] -z-px">
+        {/* @header items (Assets Left) */}
+        <div className="absolute top-[193px] sm:top-[274px] bottom-auto -left-[109px] sm:-left-[245px] lg:-left-[197px] xl:-left-[145px] right-auto h-auto w-full max-w-[153px] sm:max-w-[336px] -z-px">
           <Image
             className="object-bottom object-cover h-full w-full"
-            src="/assets/images/ethSeaPolygon-Header.png"
-            alt="ETH Sea (Header (Polygon)"
+            src="/assets/images/backdrop/ethSea-ItemsHeader.png"
+            alt="ETH Sea (Header Items)"
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
-            height={673}
-            width={888}
+            height={862}
+            width={672}
             loading="lazy"
             quality="87"
           />
         </div>
+
+        {/* @header backdrop (Polygon) */}
+        <div className="absolute inset-y-0 sm:top-0 sm:bottom-[auto] left-auto -right-[145px] sm:-right-[289px] lg:-right-[235px] xl:right-0 h-[487px] sm:h-auto sm:w-full max-w-[369px] sm:max-w-[738px] lg:max-w-[740px] xl:max-w-[750px] -z-px">
+          <Image
+            className="object-bottom object-cover h-full w-full"
+            src="/assets/images/ethSeaPolygon-Header.png"
+            alt="ETH Sea (Header Polygon)"
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
+            height={1326}
+            width={1017}
+            loading="lazy"
+            quality="87"
+          />
+        </div>
+
+        {/* @content */}
         <Container>
           <div className="flex flex-col w-full max-w-[735px]">
-            <span className="text-gradient-label font-spaceGrotesk text-xl font-semibold w-max">
+            <span className="text-gradient-label font-spaceGrotesk text-base sm:text-xl font-semibold w-max">
               April — May 2024
             </span>
-            <h1 className="text-white font-beliau text-[46px] sm:text-[96px] leading-[46px] sm:leading-[96px] font-normal mt-4">
-              Unveiling Web3 Marvels from Southeast Asia
+            <h1 className="text-white font-beliau text-[46px] sm:text-[96px] leading-[46px] sm:leading-[98px] font-medium mt-4">
+              Tap into the world's fastest-growing Web3 region
             </h1>
-            <p className="text-white font-spaceGrotesk text-base sm:text-2xl font-light mt-4">
+            <p className="text-white font-spaceGrotesk text-base sm:text-2xl font-light pr-0 sm:pr-8 mt-4">
               {
-                "ETH South East Asia (SEA) taps into the rich talent pool within emerging markets through an online hackathon coupled with IRL workshops."
+                " ETH South East Asia (SEA) taps into the rich talent pool within emerging markets through an online hackathon coupled with IRL workshops."
               }
             </p>
             <div className="inline-flex flex-col sm:flex-row items-center flex-wrap mt-8 w-full">
               <Link
-                className="flex-1 inline-flex flex-row items-center justify-center bg-gradient-primary border border-solid border-white rounded-xl text-white font-spaceGrotesk text-base sm:text-lg font-medium capitalize outline-none focus-visible:outline-none py-4 sm:py-6 px-6 w-full max-w-full sm:max-w-fit"
+                className="flex-1 inline-flex flex-row items-center justify-center bg-gradient-primary border border-solid border-white rounded-xl text-white font-spaceGrotesk text-base sm:text-lg font-medium capitalize outline-none focus-visible:outline-none mr-0 sm:mr-2 last:mr-0 mb-4 sm:mb-0 last:mb-0 py-4 sm:py-6 px-6 w-full max-w-full sm:max-w-fit"
+                href="https://share.hsforms.com/15eAlxOlASAiSLpqC_YyMqAcjggg"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Become a Partner
+              </Link>
+              <Link
+                className="flex-1 inline-flex flex-row items-center justify-center bg-transparent border border-solid border-transparent rounded-xl text-white font-spaceGrotesk text-base sm:text-lg font-medium capitalize hover:underline outline-none focus-visible:outline-none mr-0 sm:mr-2 last:mr-0 mb-4 sm:mb-0 last:mb-0 py-4 sm:py-6 px-6 w-full max-w-full sm:max-w-fit"
                 href=""
               >
                 <svg
@@ -71,16 +95,8 @@ const Header = () => {
                 </svg>
                 Applications open soon
               </Link>
-              <Link
-                className="flex-1 inline-flex flex-col items-center justify-center bg-transparent border border-solid border-transparent rounded-xl text-white font-spaceGrotesk text-base sm:text-lg font-medium capitalize hover:underline outline-none focus-visible:outline-none py-4 sm:py-6 px-6 w-full max-w-full sm:max-w-fit"
-                href="https://share.hsforms.com/15eAlxOlASAiSLpqC_YyMqAcjggg"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Interested in hosting a track?
-              </Link>
             </div>
-            <div className="inline-flex flex-row flex-wrap mt-19 gap-x-[42px] w-full max-w-full">
+            <div className="inline-flex flex-row flex-wrap mt-15 sm:mt-19 pb-6 lg:pb-10 gap-x-[42px] w-full max-w-full">
               {/* <div className="flex-1 flex flex-col items-center justify-center w-full max-w-fit">
                 <Image
                   className="object-bottom object-cover h-auto sm:h-[89px] w-[160px] sm:w-auto"
@@ -103,7 +119,9 @@ const Header = () => {
                   quality="87"
                 />
               </div> */}
-              <span>Organized by ICN, the organizer of Coinfest Asia.</span>
+              <span className=" text-white font-spaceGrotesk text-base font-light">
+                Organized by ICN, the organizer of Coinfest Asia.
+              </span>
             </div>
           </div>
         </Container>
