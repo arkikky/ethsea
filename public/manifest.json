@@ -1,17 +1,18 @@
 {
   "name": "ETH Sea",
-  "short_name": "ETHSea",
+  "short_name": "ETH Sea",
   "description": "ETH South East Asia (SEA) taps into the rich talent pool within emerging markets through an online hackathon coupled with IRL workshops.",
   "start_url": "/",
   "display": "standalone",
+  "dir": "auto",
+  "lang": "en-US",
   "background_color": "#141414",
   "theme_color": "#141414",
   "icons": [
     {
       "src": "/favicon-512x512.png",
       "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "any maskable"
+      "type": "image/png"
     }
   ]
 }

@@ -18,8 +18,17 @@ const App = ({ Component, pageProps }) => {
       <Head>
         <meta charSet="UTF-8" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="shortcut icon" type="image/x-icon" href="/favicon.png" />
+        {/* <meta name="viewport" content="width=device-width, initial-scale=1.0" /> */}
+        <meta
+          name="viewport"
+          content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no, user-scalable=no, viewport-fit=cover"
+        />
+        <link
+          rel="shortcut icon"
+          type="image/x-icon"
+          href="/favicon.png"
+          sizes="any"
+        />
         <link rel="apple-touch-icon" sizes="180x180" href="/favicon.png" />
         <meta name="description" content={`${publicRuntimeConfig.siteDesc}`} />
         <link
@@ -42,7 +51,7 @@ const App = ({ Component, pageProps }) => {
         />
         <meta
           property="og:image"
-          content={`${process.env.NEXT_PUBLIC_UPLOAD_STORAGE}/uploads/ethsea_Thumbnails_app_Share_Link_d44538de2d.jpg`}
+          content={`${process.env.NEXT_PUBLIC_UPLOAD_STORAGE}/uploads/ethsea_Thumbnails_app_Share_Link_0da272e44b.jpg`}
         />
 
         <link rel="mask-icon" href="/favicon.png" color="#141414" />
@@ -51,7 +60,11 @@ const App = ({ Component, pageProps }) => {
         <meta name="msapplication-navbutton-color" content="#141414" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="#141414" />
-        <link rel="manifest" href="/manifest.json" />
+        <link
+          rel="manifest"
+          href="/manifest.json"
+          crossOrigin="use-credentials"
+        />
         <link rel="canonical" href={`${publicRuntimeConfig.siteUrl}`} />
       </Head>
 

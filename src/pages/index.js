@@ -99,13 +99,14 @@ const Home = () => {
           property="og:description"
           content={publicRuntimeConfig.siteDesc}
         />
+        <meta property="og:site_name" content={publicRuntimeConfig.siteTitle} />
         <meta
           property="og:image"
-          content={`${process.env.NEXT_PUBLIC_UPLOAD_STORAGE}/uploads/ethsea_Thumbnails_app_Share_Link_d44538de2d.jpg`}
+          content={`${process.env.NEXT_PUBLIC_UPLOAD_STORAGE}/uploads/ethsea_Thumbnails_app_Share_Link_0da272e44b.jpg`}
         />
 
         {/* @twitter */}
-        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:card" content="summary" />
         <meta property="twitter:url" content={publicRuntimeConfig.siteUrl} />
         <meta
           property="twitter:title"
@@ -117,8 +118,9 @@ const Home = () => {
         />
         <meta
           property="twitter:image"
-          content={`${process.env.NEXT_PUBLIC_UPLOAD_STORAGE}/uploads/ethsea_Thumbnails_app_Share_Link_d44538de2d.jpg`}
+          content={`${process.env.NEXT_PUBLIC_UPLOAD_STORAGE}/uploads/ethsea_Thumbnails_app_Share_Link_0da272e44b.jpg`}
         />
+        <meta name="twitter:creator" content="@idcryptonetwork" />
       </Head>
 
       <main className="overflow-hidden">
