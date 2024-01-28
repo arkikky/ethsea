@@ -19,10 +19,6 @@ const App = ({ Component, pageProps }) => {
         <meta charSet="UTF-8" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        {/* <meta
-          name="viewport"
-          content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no, user-scalable=no, viewport-fit=cover"
-        /> */}
         <link
           rel="shortcut icon"
           type="image/x-icon"
@@ -37,6 +33,17 @@ const App = ({ Component, pageProps }) => {
           crossOrigin="true"
         />
         <meta name="author" content="Indonesia Crypto Network" />
+
+        <meta
+          name="theme-color"
+          media="(prefers-color-scheme: light)"
+          content="white"
+        />
+        <meta
+          name="theme-color"
+          media="(prefers-color-scheme: dark)"
+          content="black"
+        />
 
         {/* @openGraph */}
         <meta property="og:type" content="website" />
@@ -60,11 +67,7 @@ const App = ({ Component, pageProps }) => {
         <meta name="msapplication-navbutton-color" content="#141414" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="#141414" />
-        <link
-          rel="manifest"
-          href="/manifest.json"
-          crossOrigin="use-credentials"
-        />
+        <link rel="manifest" href="/manifest.json" />
         <link rel="canonical" href={`${publicRuntimeConfig.siteUrl}`} />
       </Head>
 
