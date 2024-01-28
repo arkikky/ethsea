@@ -101,9 +101,7 @@ const Home = () => {
         />
         <meta
           property="og:image"
-          content={
-            "/assets/images/ethsea_Thumbnails_app_Share_Link_d44538de2d.jpg"
-          }
+          content={`${process.env.NEXT_PUBLIC_UPLOAD_STORAGE}/uploads/ethsea_Thumbnails_app_Share_Link_d44538de2d.jpg`}
         />
 
         {/* @twitter */}
