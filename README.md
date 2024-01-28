@@ -1,13 +1,15 @@
-![Ethereum Sea Logo](https://hub.coinvestasi.com/uploads/ethsea_Thumbnails_app_Share_Link_d44538de2d.jpg)
+![Ethereum Sea Logo](https://hub.coinvestasi.com/uploads/ethsea_Thumbnails_app_Share_Link_0da272e44b.jpg)
 
 # ETH Sea
 
 ETH South East Asia (SEA) taps into the rich talent pool within emerging markets through an online hackathon coupled with IRL workshops.
 
 ## Getting Started
+
 This project was built using [Next.js](https://nextjs.org/), Tailwind CSS, and GSAP to create interactive and responsive animations.
 
 First, run the development server:
+
 ```bash
 $ git clone https://github.com/arkikky/ethsea.git
 $ cd ethsea
@@ -38,4 +40,5 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
 ## Important
+
 Make sure to change the url_to_logo, https://github.com/user_name/ethsea-website.git, and edit other parts according to the actual content and needs of your project. Also, make sure to conform to best practices for your project's contributions and licensing.
