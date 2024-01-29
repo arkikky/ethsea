@@ -120,11 +120,6 @@
   resolved "https://registry.yarnpkg.com/@preline/collapse/-/collapse-1.3.0.tgz#121e27a3fbd5ece4b5768d7a7e459a2bd263f262"
   integrity sha512-KP9HK2RCoJrxcZ39A/7ZisqOE4W1HXFcXZxJcQRNZVAGW1izVYbeBfVAwkR1SUqMpKpa5afTdXAkkmMbrBGHrg==
 
-"@studio-freight/lenis@1.0.29":
-  version "1.0.29"
-  resolved "https://registry.yarnpkg.com/@studio-freight/lenis/-/lenis-1.0.29.tgz#d7fcbf16c2ca1ddcb0d19007851e2920006985d4"
-  integrity sha512-z/qS8ato5m2wlxQREYj5iALcxMrhhm06vEiLqYzLI+3HmpPzPscmJ8cXNiay4bj692vOot2hyTA3WP++AQVoKA==
-
 "@swc/helpers@0.5.2":
   version "0.5.2"
   resolved "https://registry.yarnpkg.com/@swc/helpers/-/helpers-0.5.2.tgz#85ea0c76450b61ad7d10a37050289eded783c27d"
@@ -447,13 +442,6 @@ lines-and-columns@^1.1.6:
   version "1.2.4"
   resolved "https://registry.yarnpkg.com/lines-and-columns/-/lines-and-columns-1.2.4.tgz#eca284f75d2965079309dc0ad9255abb2ebc1632"
   integrity sha512-7ylylesZQ/PV29jhEDl3Ufjo6ZX7gCqJr5F7PKrqc93v7fzSymt1BpwEU8nAUXs8qzzvqhbjhK5QZg6Mt/HkBg==
-
-locomotive-scroll@^5.0.0-beta.11:
-  version "5.0.0-beta.11"
-  resolved "https://registry.yarnpkg.com/locomotive-scroll/-/locomotive-scroll-5.0.0-beta.11.tgz#68bd81795f73a748b2958d5a75943f41f3c5c5cf"
-  integrity sha512-FQm0Yjk9X+euXmiaKVRVQNw/WuQXoTBp9eqPyZqsXDSwuiedaoJzzC0SGBM9CZRJ4tKaCHGa3pfp6CFgPyEq6Q==
-  dependencies:
-    "@studio-freight/lenis" "1.0.29"
 
 lodash.castarray@^4.4.0:
   version "4.4.0"
